@@ -16,7 +16,13 @@ Etapa prevista para **03/09/2026**, preparada em **10/09/2026**. Esta versão co
 - [Guia visual editável](docs/Guia-visual-v0.2.md)
 - [GDD atualizado v0.2](docs/GDD-v0.2.md)
 
-O guia inclui concepts descritos, model sheet planejado, identidade visual, sprites e animações, cenários, rotas das fases e progressão dos desafios. As imagens serão geradas pela equipe em outra ferramenta e ainda não estão neste pacote. A tag v0.2 registra o planejamento; adicionar e revisar as artes em novos commits. O repositório permanece local, sem remoto.
+O guia inclui concepts descritos, model sheet planejado, identidade visual, sprites e animações, cenários, rotas das fases e progressão dos desafios. A tag v0.2 preserva o planejamento anterior ao recebimento das imagens. O repositório permanece local, sem remoto.
+
+## Acervo visual recebido
+
+As 29 imagens fornecidas pela equipe estão organizadas em [Art/README.md](Art/README.md), com personagens, model sheets, cenários, fundos de batalha e estudos de animação. Os mapas estão em `LevelDesign`, separados por fase. O [inventário técnico](Art/inventario.json) registra origem, dimensões e SHA-256 de cada cópia. Os originais em Documentos foram preservados.
+
+As sequências de movimento e efeitos ainda precisam de preparação para uso na Unity. Os documentos v0.1/v0.2 e suas tags preservam o planejamento histórico; o índice visual registra o recebimento posterior das artes.
 
 Para regenerar esta revisão, executar `python tools/gerar_guia_visual.py` com ReportLab instalado. A v0.1 permanece preservada.
 
