@@ -1,3 +1,11 @@
+# Fontes da revisão v0.2
+
+Fonte consultada em 10/09/2026: [GDD v0.1 em PDF](../output/pdf/Between-fire-and-water-GDD-v0.1.pdf), seis páginas. As informações sobre o manuscrito abaixo são herdadas da v0.1; o manuscrito não está neste checkout e não foi consultado novamente. O caminho histórico não comprova disponibilidade atual.
+
+Materiais visuais: dez PNGs fornecidos pelo usuário, inspecionados e organizados por finalidade. Ver [catálogo](../imagens/README.md) e [inventário](../imagens/inventario.json). Autoria, ferramenta e licença não informadas. Não foram adicionadas referências externas. Paleta, associação das plantas às fases, bloqueios, XP e parâmetros de sprites são propostas da v0.2.
+
+## Registro histórico da v0.1
+
 # Referência narrativa
 
 - Título de referência: Entre fogo e água.
