@@ -2,6 +2,13 @@
 
 RPG 2D por turnos previsto para Unity e C#, com investigação de mapas e evolução por XP, baseado no manuscrito **Entre fogo e água** fornecido pela equipe.
 
+## GDD atual | v0.2.1
+
+- [GDD consolidado em PDF](output/pdf/Between-fire-and-water-GDD-v0.2.1.pdf)
+- [GDD editável com índice das 29 imagens](docs/GDD-v0.2.1.md)
+
+Esta revisão registra o acervo recebido, inclui referências visuais e diferencia estudos de animação de assets preparados para Unity. A fase 1 usa o sketch como rota física e o diagrama anotado como sequência de objetivos. Para regenerar, executar `python tools/gerar_gdd_atual.py` com ReportLab e Pillow instalados. Os geradores anteriores preservam as revisões históricas v0.1 e v0.2.
+
 ## Entrega 1 - Concepção | v0.1
 
 Etapa prevista para **03/09/2026**, preparada em **10/09/2026**. Esta versão contém planejamento; ainda não há protótipo, build ou projeto Unity.

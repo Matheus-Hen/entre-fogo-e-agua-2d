@@ -9,4 +9,4 @@ Imagens recebidas e preservadas como referência de level design, ainda sem impl
 
 Na fase 1, o diagrama de progressão liga templo e trilha diretamente, enquanto o sketch mostra a trilha conectada ao pátio. Ao construir a fase, conciliar a rota física do sketch com a ordem de objetivos: entrada, treino B1, pista P1, guarda B2 e saída. Não alterar automaticamente as imagens para resolver essa diferença.
 
-As fases 2 e 3 possuem sketches; diagramas de progressão anotados equivalentes ao da fase 1 não foram fornecidos. A progressão textual está no [GDD v0.2](../docs/GDD-v0.2.md).
+As fases 2 e 3 possuem sketches; diagramas de progressão anotados equivalentes ao da fase 1 não foram fornecidos. A progressão textual atual está no [GDD v0.2.1](../docs/GDD-v0.2.1.md). Nesta revisão, a fase 1 usa a rota física do sketch: após a pista no templo, retornar ao pátio e seguir pela trilha liberada.
