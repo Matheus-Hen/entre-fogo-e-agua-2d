@@ -10,6 +10,16 @@ Etapa prevista para **03/09/2026**, preparada em **10/09/2026**. Esta versão co
 - [GDD inicial para entrega em PDF](output/pdf/Between-fire-and-water-GDD-v0.1.pdf)
 - [Referência narrativa](docs/REFERENCIAS.md)
 
+## Entrega 2 - Planejamento visual | v0.2
+
+- [Guia visual em PDF: descrições e prompts](output/pdf/Between-fire-and-water-Guia-visual-v0.2.pdf)
+- [Guia visual editável](docs/Guia-visual-v0.2.md)
+- [GDD atualizado v0.2](docs/GDD-v0.2.md)
+
+O guia inclui concepts descritos, model sheet planejado, identidade visual, sprites e animações, cenários, rotas das fases e progressão dos desafios. As imagens serão geradas pela equipe em outra ferramenta e ainda não estão neste pacote. A tag v0.2 registra o planejamento; adicionar e revisar as artes em novos commits. O repositório permanece local, sem remoto.
+
+Para regenerar esta revisão, executar `python tools/gerar_guia_visual.py` com ReportLab instalado. A v0.1 permanece preservada.
+
 ## Equipe
 
 | Integrante | Responsabilidades propostas, a validar |

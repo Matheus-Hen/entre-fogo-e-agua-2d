@@ -1,0 +1,209 @@
+# Between fire and water | Guia de produção visual v0.2
+
+## 01 | Direção visual
+
+### Finalidade deste material
+
+Entrega 2 - Direção Visual e Level Design | v0.2 | 10/09/2026. Este guia contém descrições e prompts para usar em outra ferramenta. Concepts, model sheets e sprites ainda precisam ser gerados, selecionados e revisados. As características visuais novas são propostas de adaptação; não são descrições literais do livro.
+
+### Identidade proposta
+
+Fantasia urbana juvenil em 2D: personagens expressivos, roupas contemporâneas e poderes elementais. Exploração com câmera superior levemente inclinada, sem perspectiva isométrica; batalhas com vista lateral. Usar ilustração com contorno e cores chapadas, evitando misturar pixel art com pintura realista. Silhuetas simples devem continuar reconhecíveis em telas pequenas.
+
+### Paleta funcional
+
+Azul-petróleo #152C3D: contornos, sombras e estrutura da interface. Ciano #32BBD3: água e proteção. Laranja #F47B35: fogo e ataque. Marfim #F3E9D2: fundos e áreas claras. Verde #637C57: vegetação. Cinza #748391: instalações da ASDA. Não usar apenas cor para comunicar: fogo tem forma de chama; água tem gota e arco fluido; interação tem ícone e contorno.
+
+### Referências de conteúdo e forma
+
+Fonte narrativa: manuscrito Entre fogo e água, 21 páginas, fornecido pelo grupo. Páginas 3-5 fundamentam Magnus; 7-11, treinamento e poderes; 16-19, aliados e investigação; 20-21, confronto final. Como referências formais, usar roupas juvenis contemporâneas sem marcas, templos de madeira e pedra, vegetação de acampamento e corredores de instalações de segurança. Essas categorias orientam o moodboard; ainda não foi montada uma prancha de imagens de referência.
+
+### Prompt-base para todos os concepts
+
+Arte conceitual para Between fire and water, RPG 2D por turnos de fantasia urbana juvenil. Ilustração digital estilizada, contornos limpos, sombreamento em duas ou três tonalidades, formas simples que possam ser convertidas em sprites. Paleta azul-petróleo, ciano, laranja e marfim. Design original, silhuetas legíveis, sem fotorrealismo, sem logos, sem marcas-d’água e sem texto na imagem. 
+
+### Como usar
+
+Para cada item, copie o prompt-base acima e acrescente o prompt específico das próximas páginas. Depois de aprovar Magnus, envie a mesma imagem como referência em todas as gerações dele. Preserve roupa, rosto, proporções e paleta. Gere cada prancha separadamente. As resoluções sugeridas são de saída; ajuste às opções da ferramenta sem cortar personagens.
+
+## 02 | Magnus: concept principal
+
+### Descrição e vínculo com o livro
+
+Magnus Lubros é um adolescente de 14 anos, com cabelo escuro e olhos castanhos escuros, que controla fogo e água. O manuscrito o descreve com 1,73 m; no jogo, a escala será estilizada. A roupa abaixo é uma proposta para criar identidade própria e facilitar a animação.
+
+### Elementos fixos do design
+
+Corpo esguio juvenil, cerca de cinco cabeças e meia de altura na arte conceitual. Cabelo castanho muito escuro, curto e levemente bagunçado; olhos castanhos escuros. Jaqueta curta azul-petróleo aberta, camiseta marfim lisa, calça cinza-escura e tênis claros sem marcas. Duas faixas verticais estreitas, uma laranja e uma ciano, próximas ao zíper da jaqueta; ambos os braços têm mangas iguais. Não adicionar armadura, capa, armas ou detalhes pequenos.
+
+### Prompt A - personagem inteiro
+
+Magnus Lubros, adolescente de 14 anos, aparência juvenil, corpo esguio, cabelo castanho muito escuro curto e bagunçado, olhos castanhos escuros. Jaqueta curta azul-petróleo aberta com duas faixas finas laranja e ciano junto ao zíper, camiseta marfim sem estampa, calça cinza-escura, tênis claros. Corpo inteiro em vista frontal de três quartos, mãos visíveis, expressão determinada e curiosa, pose neutra confiante. Uma pequena chama flutua ao lado de uma mão e um arco de água ao lado da outra, sem cobrir o corpo. Fundo marfim liso, personagem centralizado com margem ampla. Formato vertical 2:3, sugestão 1024 x 1536.
+
+### Prompt B - expressões
+
+Usar a imagem aprovada de Magnus como referência obrigatória. Prancha com seis retratos do mesmo adolescente: neutro, confiante, desconfiado, surpreso, concentrado e triste. Preservar exatamente cabelo, olhos, roupa, idade e formato do rosto. Retratos separados em grade 3 por 2, mesma escala e mesmo enquadramento, fundo marfim, sem palavras. Formato 3:2, sugestão 1536 x 1024.
+
+### Verificar antes de aprovar
+
+Rosto e corpo devem parecer juvenis. Conferir mãos, quantidade de dedos e continuidade da roupa. As cores não podem trocar entre gerações. A chama e a água são efeitos separados, não partes permanentes da anatomia. Selecionar apenas um design-base antes de pedir o model sheet.
+
+## 03 | Model sheet de Magnus
+
+### Objetivo da prancha
+
+Documentar o personagem para que todas as artes representem a mesma pessoa. Esta prancha é referência de construção; ainda não é uma folha de sprites pronta para Unity. Produzir as vistas sem efeitos elementais para não esconder roupa e proporções.
+
+### Prompt C - vistas de construção
+
+Usar o concept aprovado de Magnus como referência visual. Criar model sheet ortográfico do mesmo personagem em quatro vistas: frente, perfil esquerdo, costas e perfil direito. Corpo inteiro em todas as vistas, cabeça e sola dos pés alinhadas, escala e altura idênticas, postura neutra com braços ligeiramente afastados do tronco. Preservar a jaqueta azul-petróleo, camiseta marfim, calça cinza-escura, tênis claros, cabelo e olhos da referência. Sem perspectiva dramática, sem poderes, sem armas, sem sombras projetadas fortes, sem rótulos. Fundo claro uniforme, espaço igual entre figuras. Formato horizontal 2:1, sugestão 2048 x 1024.
+
+### Prompt D - detalhes complementares
+
+Usar o mesmo Magnus aprovado. Prancha de detalhes com três enquadramentos separados: cabeça de frente e de perfil; jaqueta de frente e de costas; mãos relaxadas e punhos fechados. Manter design e cores exatamente iguais à referência. Contorno limpo e acabamento simples, fundo marfim, sem texto, sem inventar acessórios. Formato 3:2, sugestão 1536 x 1024.
+
+### Proporções e continuidade
+
+A altura relativa das pernas, posição da cintura, tamanho da cabeça e comprimento das mangas devem coincidir nas vistas. Como a roupa usa poucos detalhes e mangas simétricas, ela facilita a produção de animação. Validar os perfis separadamente; espelhar uma imagem só é aceitável quando não altera detalhes de continuidade.
+
+### Entrega visual esperada
+
+Uma prancha de quatro vistas, uma prancha de expressões e uma prancha de detalhes. Após gerar, adicionar títulos e nomes manualmente em uma ferramenta de diagramação. Guardar o concept aprovado junto das pranchas para referência da equipe.
+
+## 04 | Aliados, inimigos e objetos
+
+### Uso e prioridade
+
+Magnus tem prioridade máxima. Lizzie, Ki, Mark e um guarda-base precisam de concepts para sustentar as três fases. Michael, Olive e Brian podem usar retratos narrativos nesta versão. As propostas abaixo evitam ampliar a quantidade de personagens controláveis.
+
+### Prompt E - Lizzie
+
+Concept de Lizzie, amiga adolescente de Magnus, baixa, cabelos castanhos, expressão observadora e corajosa. Proposta de roupa: blusa ciano discreta, jaqueta cinza curta, calça azul-escura e tênis simples. Corpo inteiro em três quartos, pequeno arco de água próximo à mão, postura alerta, fundo marfim. Design juvenil, prático, sem sexualização. Formato vertical 2:3.
+
+### Prompt F - Ki e Mark, gerar individualmente
+
+Ki: jovem instrutor de aparência adolescente, postura disciplinada, roupa de treino marfim com faixa azul-petróleo, cabelo escuro curto, pequena chama flutuante, corpo inteiro e fundo neutro. Mark: antagonista adulto de baixa estatura, expressão controlada e ameaçadora, uniforme cinza-escuro de chefe de segurança com detalhes geométricos laranja discretos, mãos atrás das costas, sem arma em destaque, corpo inteiro e fundo neutro. Os detalhes de roupa são propostas. Gerar uma imagem vertical 2:3 por personagem.
+
+### Prompt G - guarda e variante elite
+
+Prancha de dois guardas de instalação de segurança, corpo inteiro, mesma anatomia-base e uniforme cinza-azulado simplificado. O guarda comum tem equipamento leve e silhueta estreita. A variante elite tem ombreiras compactas e proteção de antebraços mais larga, diferença perceptível pela forma. Rostos simplificados, sem armas realistas detalhadas, sem emblemas de franquias. Fundo marfim e vista de três quartos, formato 3:2.
+
+### Prompt H - aliados narrativos
+
+Gerar retratos individuais consistentes com o estilo: Michael, jovem de pele escura e olhos azuis, postura firme; Olive, jovem de cabelos rosa e olhos amarelos, expressão decidida; Brian, jovem de pele clara, cabelos castanhos e olhos vermelhos, aparência próxima de 18 anos, expressão bem-humorada. Roupas contemporâneas simples azul-petróleo, marfim e detalhes elementais. Fundo liso, busto, formato quadrado. Não juntar rostos na mesma imagem.
+
+### Prompt I - objetos investigáveis
+
+Prancha com quatro objetos separados em vista superior levemente inclinada: pergaminho antigo enrolado, terminal de segurança compacto, cartão de identificação sem texto e painel de porta bloqueada. Formas grandes e simples, contorno azul-petróleo, pequeno destaque marfim para indicar interação. Fundo neutro, nenhum texto legível, formato 1:1. Gerar separadamente depois, caso sejam usados no jogo.
+
+## 05 | Conceitos de cenário
+
+### Regra de câmera e leitura
+
+Concepts panorâmicos comunicam atmosfera. Para construir o jogo, pedir também uma vista superior do piso e dos objetos, com câmera fixa e sem pontos de fuga. Manter os caminhos claros, paredes legíveis e objetos investigáveis destacados. Evitar efeitos de iluminação que escondam a área jogável.
+
+### Prompt J - Acampamento e templo
+
+Cenário de acampamento de treinamento em mata, pequeno templo de madeira com base de pedra, pátio aberto com bonecos de treino, lago raso à esquerda e área segura de prática de fogo à direita. Manhã com luz suave, vegetação verde dessaturada, pedras claras e detalhes laranja e ciano. Entrada do templo claramente visível, caminho largo conectando pátio e saída para a floresta, sem personagens. Composição para exploração de RPG 2D, vista superior levemente inclinada, sem isometria, formato 16:9.
+
+### Prompt K - Posto DASA
+
+Interior compacto de empresa de segurança que esconde operações da ASDA. Recepção simples, corredor central, arquivo lateral com documentos e sala de segurança com terminal. Piso cinza claro, paredes azul-acinzentadas, luz fria e pequenos indicadores ciano. Ambiente aparentemente organizado, com detalhes que sugerem segredo. Caminho principal livre, portas e salas distinguíveis, sem pessoas e sem texto gerado, câmera superior levemente inclinada, formato 16:9.
+
+### Prompt L - Base ASDA
+
+Base inimiga de segurança: entrada estreita desemboca em corredor com painéis, antecâmara e sala final ampla com plataforma central. Metal cinza-escuro, sombras azul-petróleo, pequenos sinais laranja e núcleo de energia ciano ao fundo como elemento cenográfico. Clima de confronto e tensão, sem gore, sem explosão que esconda o piso. Área central livre para composição de batalha e rota legível até o chefe, sem personagens, câmera superior levemente inclinada, formato 16:9.
+
+### Fundos de combate
+
+Para cada cenário aprovado, pedir uma variante lateral em 16:9: herói ocupará o terço esquerdo e inimigo o direito, com chão horizontal comum; deixar o quarto inferior sem detalhes importantes para o menu de ações. Usar o mesmo material, paleta e iluminação do respectivo mapa. Não incluir combatentes no fundo.
+
+### Entrega visual esperada
+
+Três concepts de exploração e três fundos de batalha derivados. Reutilizar materiais e objetos entre DASA e ASDA. O cenário conceitual não precisa ser um mapa navegável; a topologia obrigatória está no planejamento de fases a seguir.
+
+## 06 | Mapas e progressão
+
+### Convenção para os sketches
+
+Mapas vistos de cima, com caixas para salas e linhas para passagens. A entrada e a saída devem ser distintas. B significa batalha obrigatória; P significa pista obrigatória. Os diagramas gerados são referências: adicionar rótulos manualmente e conferir as conexões. Dimensões abaixo são propostas em tiles de 32 x 32 px.
+
+### Fase 1 - aprender | 32 x 24 tiles
+
+Fluxo: entrada > pátio com B1 treino > templo com P1 traição > trilha com B2 guarda > saída. A ligação para a trilha fica bloqueada até descobrir P1. Lago e bonecos são cenário, sem minigame adicional. Ensina movimento, interação, ataque, defesa e recompensa. Estimativa de 6 a 8 minutos. Magnus começa no nível 1 e deve chegar ao nível 2 ao terminar esta área; validar o total de XP no protótipo.
+
+### Prompt M - sketch da fase 1
+
+Planta esquemática superior de mapa pequeno: entrada no sul, grande pátio central, lago decorativo no oeste, templo no norte, trilha de fuga saindo pelo leste do pátio. Conectar entrada ao pátio, pátio ao templo e pátio à trilha. Marcar dois círculos vazios para encontros, um no pátio e um na trilha; um losango vazio dentro do templo para pista. Fundo branco, linhas escuras, sem texto, sem perspectiva, formato 4:3.
+
+### Fase 2 - investigar | 36 x 24 tiles
+
+Fluxo: recepção > B3 guarda no corredor > arquivo com P2 identificação > B4 guarda na sala de segurança > terminal com P3 localização da base > saída. A saída exige P2, P3 e ambas as vitórias; manter retorno livre às pistas para evitar bloqueio. Ensina consultar objetivos e alternar dano com proteção. Estimativa de 7 a 10 minutos; planejar nível 3 ao final.
+
+### Prompt N - sketch da fase 2
+
+Planta superior de instalação retangular pequena: recepção no sul, corredor central, arquivo a oeste, sala de segurança a leste e saída ao norte. Corredor conecta todas as salas. Dois círculos vazios, um no corredor e um na sala de segurança; dois losangos vazios, um no arquivo e outro junto ao terminal da sala de segurança. Fundo branco, linhas escuras, sem texto, formato 3:2.
+
+### Fase 3 - combinar | 32 x 28 tiles
+
+Fluxo: entrada > B5 elite > antecâmara > B6 Mark > desfecho. Recuperar recursos na antecâmara para o chefe não depender de itens ou grind. O elite exige uso da defesa; Mark alterna ataque simples e preparação visível de ataque forte, dando um turno para reagir. Estimativa de 7 a 12 minutos. Ao vencer, reproduzir o desfecho com Brian e a queda da ASDA por diálogos.
+
+### Prompt O - sketch da fase 3
+
+Planta superior de base compacta: entrada sul, corredor reto, antecâmara intermediária e arena retangular ampla ao norte; conexões lineares e claras. Um círculo vazio no corredor para elite e um círculo maior no centro da arena para chefe. Fundo branco, linhas escuras, sem texto, formato 4:3.
+
+## 07 | Sprites e animações
+
+### Padrão técnico proposto
+
+Tiles de 32 x 32 px; sprite de exploração de Magnus em células de 64 x 64 px, quatro direções. Sprites de combate em células de 256 x 256 px, vista lateral. PNG com transparência real, escala constante, pivô dos personagens no centro dos pés. Esses tamanhos são alvos de exportação após edição, não garantia de precisão da ferramenta generativa.
+
+### Magnus - exploração | 20 quadros
+
+Parado: 1 quadro por direção, total 4. Andar: 4 quadros por direção, total 16, repetição a cerca de 8 quadros por segundo. As direções são frente, costas, esquerda e direita. Mesmo chão de apoio e mesma altura em todas as células. O ciclo deve começar e terminar sem salto de posição.
+
+### Magnus - combate | 20 quadros
+
+Parado: 2 quadros em repetição; ataque básico: 4; conjurar elemento: 4, reutilizados para fogo e água com efeitos separados; defender: 2; receber dano: 2; derrota: 4; vitória: 2. Ações entre 8 e 12 quadros por segundo como ponto inicial. Defesa pode manter o último quadro até receber o golpe.
+
+### NPCs e inimigos
+
+Lizzie, Ki, Michael, Olive e Brian: um sprite estático de exploração e um retrato cada. Guarda comum, elite, Ki de treino e Mark: por conjunto de combate, 2 quadros parado, 4 atacando, 2 recebendo dano e 4 de derrota, total 12. Guarda comum e elite reutilizam animação-base. A derrota do treino de Ki é uma pose de encerramento, não morte.
+
+### Efeitos e interface
+
+Quatro efeitos separados: impacto básico com 4 quadros, fogo com 6, água com 6 e defesa com 4, total 20. Planejar tiles compartilhados de chão, parede e cantos, quatro objetos investigáveis, ícones de vida, energia, XP, fogo, água e defesa. Texto de interface deve ser inserido na Unity, não desenhado dentro das imagens.
+
+### Prompt P - referência de movimento
+
+Usar Magnus aprovado como referência. Criar quatro poses sequenciais do mesmo ciclo de caminhada visto de frente, corpo inteiro, mesma altura e pés na mesma linha de base, igualmente espaçadas em uma linha. Roupa e rosto invariáveis, fundo liso contrastante, sem chão, sem sombra projetada e sem texto. Esta é uma referência para reconstrução de sprites. Repetir separadamente para costas, esquerda e direita.
+
+### Prompt Q - efeito elemental
+
+Criar estudo de seis momentos de uma pequena bola de fogo estilizada, da formação ao impacto, formas simples laranja e marfim com contorno discreto, quadros separados sem sobreposição, fundo uniforme. Repetir em outra imagem com jato de água ciano em arco. Sem personagem e sem texto. Recortar, limpar o fundo e alinhar os quadros manualmente antes de importar.
+
+## 08 | Organização e atualização do GDD
+
+### Ordem de geração recomendada
+
+1. Aprovar o concept de Magnus. 2. Gerar suas vistas e expressões com referência. 3. Gerar Lizzie, Ki, Mark e guarda-base. 4. Gerar cenários e fundos. 5. Gerar sketches de fases e conferir rotas. 6. Produzir poses e efeitos para orientar sprites. 7. Montar as pranchas com títulos fora da ferramenta de geração.
+
+### Arquivos e nomes
+
+Salvar concepts em Art/Concepts, pranchas em Art/ModelSheets, estudos em Art/AnimationStudies e mapas em LevelDesign. Exemplos: magnus_concept_v01.png, magnus_modelsheet_v01.png, fase01_acampamento_sketch_v01.png. Quando houver projeto Unity, importar assets finais em Assets/Art e versionar os respectivos arquivos .meta. Separar imagem de referência de sprite pronto para uso.
+
+### Checklist de revisão
+
+Conferir rosto, idade, roupa e paleta; ausência de membros extras; vistas coerentes; silhueta legível em tamanho reduzido; nenhum texto aleatório; caminhos conectados; espaço para menus nos fundos de batalha. Para sprites, conferir tamanho das células, transparência, alinhamento dos pés e continuidade do ciclo. Não considerar uma folha gerada pronta sem edição e teste.
+
+### Mudanças registradas no GDD v0.2
+
+Definidos estilo ilustrado 2D, paleta, design proposto de Magnus, especificações de sprites, inventário de animação, identidade dos três cenários, fluxo das fases e progressão dos desafios. Mantidos combate por turnos, investigação, XP, três mapas, seis encontros e final inspirado no livro. Os valores de balanceamento e o resultado visual dependem de prototipagem e aprovação da equipe.
+
+### O que esta versão entrega
+
+Guia visual em PDF e Markdown, prompts para outra ferramenta, planejamento de fases e GDD v0.2 atualizado. A tag v0.2 identifica esta revisão de planejamento. Nenhuma arte, model sheet ou animação final foi gerada neste pacote, por escolha do fluxo solicitado. Inserir as imagens produzidas no mesmo repositório e criar um novo marco, como v0.2.1, após revisão, preservando o histórico.
+
+### Pendências para apresentar a etapa visual
+
+Gerar e selecionar as imagens; diagramar os model sheets e mapas; revisar com a equipe; acrescentar créditos e origem das imagens usadas; publicar o repositório remoto, que ainda não foi criado. O guia de prompts prepara a produção, mas as imagens previstas na lista da entrega ainda precisam ser anexadas.
