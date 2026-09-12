@@ -114,6 +114,22 @@ Na batalha, vence quem reduzir primeiro a vida do oponente a zero. A vida é lim
 
 Prever pausa, volume, retorno ao menu e um salvamento automático local ao concluir cada área. Ao carregar, restaurar nível, XP e objetivos concluídos. A cena narrativa de sacrifício de Brian não será tratada como derrota do jogador.
 
+## Core loop visual
+
+![Figura 1. Core loop de Between fire and water.](../imagens/07-diagramas/core-loop.png)
+
+### Leitura do ciclo
+
+Explorar e investigar orientam os confrontos. A vitória concede XP uma única vez; a evolução ocorre somente ao atingir os limiares de nível. Cumprir os objetivos obrigatórios permite avançar e repetir o ciclo na próxima área. Vencer Mark e concluir o epílogo encerram a campanha.
+
+### Condições de progressão
+
+Avançar depende das pistas e dos encontros exigidos na área, não apenas de subir de nível. A derrota permite retentar o encontro no estado anterior. O diagrama sintetiza as regras existentes; não acrescenta encontros ou sistemas.
+
+## Diagrama de fluxo do jogo
+
+![Figura 2. Fluxo de exploração, combate, recuperação e conclusão da campanha.](../imagens/07-diagramas/fluxo-do-jogo.png)
+
 ## Escopo inicial e experiência
 
 ### Campanha proposta
@@ -363,3 +379,7 @@ Confirmar autoria do manuscrito e procedência/licenças das imagens; validar pa
 ### Histórico
 
 v0.1 - 10/09/2026: concepção inicial relativa à etapa de 03/09. v0.2 - 10/09/2026: organização dos materiais, direção visual, model sheet de referência, planejamento de animação, cenários, rotas das três fases e progressão dos seis encontros.
+
+### Revisão após feedback do professor
+
+11/09/2026: inclusão do core loop visual e do diagrama de fluxo, com fontes editáveis em imagens/07-diagramas. A revisão mantém as regras e o escopo da v0.2.

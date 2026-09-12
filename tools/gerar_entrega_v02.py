@@ -26,11 +26,13 @@ ASSETS = [
 def sections():
     pages = deepcopy(PAGES[:5])
     replacements = {
+      'Trabalho compartilhado': 'A equipe tem três integrantes; a divisão acima acumula áreas para cobrir a produção. Todos participam de playtests e revisões.',
       'Entrega e versão': 'Entrega 2 - Direção Visual e Level Design. Data: 10/09/2026. Valor: 1,0 ponto. Versão: v0.2. Atualiza o GDD v0.1 com as dez imagens fornecidas, direção de arte, planejamento de sprites, cenários, fases e desafios. Documento de pré-produção; ainda não há build ou projeto Unity.',
       'Prioridades imediatas': 'Validar a direção visual e as responsabilidades; preparar recorte e padronização dos sprites; implementar na v0.3 o movimento, uma pista e uma batalha. Os mapas e parâmetros desta versão são propostas para validação no protótipo.',
       'Referência principal': 'Base desta revisão: Between-fire-and-water-GDD-v0.1.pdf, seis páginas, preservado em output/pdf. O GDD anterior identifica o manuscrito Entre fogo e água, 21 páginas, como fonte narrativa. As referências de páginas do livro abaixo são herdadas da v0.1; o manuscrito não foi consultado novamente nesta revisão. Autoria e edição continuam pendentes.',
     }
     for _, items in pages:
+        items[:] = [(h,b) for h,b in items if h != 'Tom e consistência']
         for i,(h,b) in enumerate(items):
             if h in replacements: items[i]=(h,replacements[h])
     pages += [
@@ -106,6 +108,12 @@ def main():
             flow.extend([Paragraph(escape(heading),styles['heading']),Paragraph(escape(body),styles['body'])]);md.extend(['### '+heading,'',body,''])
     for title,items in pages:
         page(title,items)
+        if title=='Mecânicas e core loop':
+            page('Core loop visual', [
+             ('Leitura do ciclo','Explorar e investigar orientam os confrontos. A vitória concede XP uma única vez; a evolução ocorre somente ao atingir os limiares de nível. Cumprir os objetivos obrigatórios permite avançar e repetir o ciclo na próxima área. Vencer Mark e concluir o epílogo encerram a campanha.'),
+             ('Condições de progressão','Avançar depende das pistas e dos encontros exigidos na área, não apenas de subir de nível. A derrota permite retentar o encontro no estado anterior. O diagrama sintetiza as regras existentes; não acrescenta encontros ou sistemas.'),
+            ], [('07-diagramas/core-loop.png','Figura 1. Core loop de Between fire and water.')],430)
+            page('Diagrama de fluxo do jogo', [], [('07-diagramas/fluxo-do-jogo.png','Figura 2. Fluxo de exploração, combate, recuperação e conclusão da campanha.')],630)
         if title=='Magnus - model sheet de referência':
             page('Model sheet | frente e costas', [('Uso','Consultar roupa, silhueta e proporções. As poses são de locomoção e exigem alinhamento antes do uso como sprites.')],[(p,l) for _,p,l in ASSETS[:2]],180)
             page('Model sheet | perfis', [('Uso','Conferir continuidade entre direita e esquerda. Não presumir simetria perfeita nem compatibilidade automática entre frames.')],[(p,l) for _,p,l in ASSETS[2:4]],180)
@@ -126,6 +134,8 @@ def main():
              ('Rota principal','Entrada sul > corredor (círculo: E5/elite) > antecâmara > arena norte (círculo: E6/Mark) > evento de Brian e epílogo.'),
              ('Bloqueios e conclusão','E5 libera a antecâmara; interagir com entrada da arena inicia diálogo e E6. Vitória encerra exploração e inicia o final. Não adicionar outra fase nem combate ao reator. Retentativa de E6 restaura estado pré-encontro sem repetir recompensa de E5.'),
             ],[(ASSETS[9][1],ASSETS[9][2])],320)
+    md.extend(['### Revisão após feedback do professor', '', '11/09/2026: inclusão do core loop visual e do diagrama de fluxo, com fontes editáveis em imagens/07-diagramas. A revisão mantém as regras e o escopo da v0.2.', ''])
+    flow.extend([Paragraph('Revisão após feedback do professor',styles['heading']),Paragraph('11/09/2026: inclusão do core loop visual e do diagrama de fluxo. A revisão mantém as regras e o escopo da v0.2.',styles['body'])])
     (ROOT/'docs/GDD-v0.2.md').write_text('\n'.join(md),encoding='utf-8')
     def frame(c,doc):
         w,h=doc.pagesize;c.setFillColor(HexColor('#152C3D'));c.rect(0,h-46,w,46,fill=1,stroke=0)
