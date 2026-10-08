@@ -6,7 +6,7 @@ Projeto de RPG 2D para um jogador, desenvolvido em Unity e C#. Acompanhe Magnus 
 
 - [GDD consolidado](docs/GDD.md): conceito, narrativa, mecânicas, fases, direção visual, estado atual e pendências.
 - [Como abrir o protótipo](docs/COMO-ABRIR-PROTOTIPO.md): instruções de execução na Unity.
-- [Referências e créditos pendentes](docs/REFERENCIAS.md).
+- [Referências e créditos pendentes](docs/REFERENCIAS.md)
 
 Este é o único README do projeto. O GDD consolidado é o único GDD ativo; versões antigas permanecem no histórico do Git.
 
