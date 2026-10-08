@@ -1,0 +1,72 @@
+[
+  {
+    "original": "image-gen-1(3).png",
+    "arquivo": "02-model-sheet/magnus-frente.png",
+    "descricao": "Magnus - vista frontal; quatro poses de caminhada",
+    "sha256": "1a8cb989c1be87b0d1e30b6f46d9da5e75498b02ce13b65babfa3789d411901b",
+    "procedencia": "Fornecida pelo usuário; autoria e licença a confirmar"
+  },
+  {
+    "original": "image-gen-2(2).png",
+    "arquivo": "02-model-sheet/magnus-costas.png",
+    "descricao": "Magnus - vista posterior; quatro poses de caminhada",
+    "sha256": "22ed79b6ca1387562b93e51b169f8261a4843a65e00b39f363f8de91a23a5f2f",
+    "procedencia": "Fornecida pelo usuário; autoria e licença a confirmar"
+  },
+  {
+    "original": "image-gen-3(2).png",
+    "arquivo": "02-model-sheet/magnus-direita.png",
+    "descricao": "Magnus - perfil direito; quatro poses de caminhada",
+    "sha256": "02f03eaaa897d8fc25cb618e75f5d04bdf4757210bffa9c96638966c13af6239",
+    "procedencia": "Fornecida pelo usuário; autoria e licença a confirmar"
+  },
+  {
+    "original": "image-gen-4(1).png",
+    "arquivo": "02-model-sheet/magnus-esquerda.png",
+    "descricao": "Magnus - perfil esquerdo; quatro poses de caminhada",
+    "sha256": "fc69fa2ff0d7047deb03797a32d0bdb6a10314e4924cd409f45ed5dcff6825ec",
+    "procedencia": "Fornecida pelo usuário; autoria e licença a confirmar"
+  },
+  {
+    "original": "image-gen-1(4).png",
+    "arquivo": "01-concept-art/efeito-fogo.png",
+    "descricao": "Concept de fogo - formação, deslocamento e impacto",
+    "sha256": "785f62636d3a4eb5a823526b5ec7970c76e84b6cebc179a52afe8b299adc85d4",
+    "procedencia": "Fornecida pelo usuário; autoria e licença a confirmar"
+  },
+  {
+    "original": "image-gen-2(3).png",
+    "arquivo": "01-concept-art/efeito-agua.png",
+    "descricao": "Concept de água - formação, arco e impacto",
+    "sha256": "6db9ef39cb1afe32b3d8a506cfdee2301ab7decf841f70b73a52aff55444c09e",
+    "procedencia": "Fornecida pelo usuário; autoria e licença a confirmar"
+  },
+  {
+    "original": "Arena do Reator Cibernético.png",
+    "arquivo": "04-cenarios/base-asda-arena-reator.png",
+    "descricao": "Conceito de cenário - arena final da ASDA",
+    "sha256": "2f68020a388ab5484385df8fd8ad47bb48152a695f0e29b05da083e4cf41cdd9",
+    "procedencia": "Fornecida pelo usuário; autoria e licença a confirmar"
+  },
+  {
+    "original": "Mapa Esquemático de Templo e Masmorras.png",
+    "arquivo": "05-level-design/mapa-01-acampamento-templo.png",
+    "descricao": "Mapa 1 - acampamento e templo",
+    "sha256": "d1ea9093f9061ccd49108a1ff9d443233e18cedf5072c74ac6f8444e52629d6e",
+    "procedencia": "Fornecida pelo usuário; autoria e licença a confirmar"
+  },
+  {
+    "original": "Planta Arquitetônica em Preto e Branco.png",
+    "arquivo": "05-level-design/mapa-02-posto-dasa.png",
+    "descricao": "Mapa 2 - posto DASA",
+    "sha256": "17ba0f48a8d00ca52620aaa1f4c15398c3193cb0aa5a6fef22f179ab36ba07f3",
+    "procedencia": "Fornecida pelo usuário; autoria e licença a confirmar"
+  },
+  {
+    "original": "Planta Esquemática em Preto e Branco.png",
+    "arquivo": "05-level-design/mapa-03-base-asda.png",
+    "descricao": "Mapa 3 - base ASDA",
+    "sha256": "7396af5b38907143a8cd9eb181d4fea185cb468331dd3d35304029fd66531dce",
+    "procedencia": "Fornecida pelo usuário; autoria e licença a confirmar"
+  }
+]

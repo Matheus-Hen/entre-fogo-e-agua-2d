@@ -1,6 +1,6 @@
-# Between fire and water | GDD v0.2.1
+# Between fire and water | GDD consolidado
 
-Revisão atual: concepção, direção visual e acervo recebido. 10/09/2026.
+Documento canônico do projeto. Consolida a concepção, direção visual, acervo, planejamento e estado atual do protótipo. Atualizado em 08/10/2026.
 
 ## Concepção do jogo
 
@@ -10,7 +10,15 @@ Nome provisório: Between fire and water. Gênero: RPG 2D por turnos, para um jo
 
 ### Entrega e versão
 
-Entrega 2 - Direção Visual e Level Design. Revisão documental v0.2.1, preparada em 10/09/2026 após receber e organizar 29 imagens. Consolida concepção, identidade visual, material de referência e planejamento das fases. Ainda não há projeto Unity implementado ou build jogável.
+Este documento reúne o GDD inicial, o planejamento visual e as revisões posteriores do projeto. O estado do protótipo foi atualizado em 08/10/2026; as versões v0.1, v0.2 e v0.2.1 permanecem como marcos históricos no Git, não como documentos ativos.
+
+### Estado atual do projeto
+
+O projeto Unity está em `Between fire and water/`. A cena `Assets/Scenes/SampleScene.unity` carrega a campanha implementada nos scripts do projeto. O protótipo inclui três fundos de exploração, limites de colisão nas fases, movimento por teclado ou toque, seis encontros, pistas, progressão, telas de menu/pausa/configurações, confirmações para substituir ou apagar saves, salvamento local e transições com fade. Mark alterna golpes comuns com ataques fortes anunciados. Esses fluxos ainda precisam de validação manual completa.
+
+Em 08/10/2026, um teste automatizado de Play Mode passou. Ele verificou somente o carregamento dos três fundos de exploração, os quatro limites de colisão por mapa e a presença do corpo físico de Magnus. A compilação atual dos scripts passou sem erros. Testes ampliados para batalha, derrota, progressão entre fases e retomada do save foram adicionados em `Assets/Tests/PlayMode/`, mas ainda precisam ser executados no Unity. Nenhuma dessas verificações comprova teste em Android ou playtest externo. O relatório anterior está em `tmp/campaign-playmode-20261008-finalrun.xml`.
+
+O projeto contém arte conceitual e estudos recebidos, mas nem todos são sprites finais. Os efeitos sonoros são sintetizados pelo protótipo; não há arquivos de áudio no acervo. A situação das versões Git deve ser consultada com `git tag`; o teste não cria uma tag de entrega.
 
 ### High Concept
 
@@ -168,7 +176,7 @@ Escopo narrativo: condensar eventos nos três mapas. Sobrecarga de arte e level 
 
 ### Conteúdo desta entrega
 
-GDD consolidado v0.2.1 em Markdown e PDF, 29 imagens organizadas em Art e LevelDesign, índice de acervo e inventário técnico com dimensões, origem e SHA-256. Há concepts, model sheets, retratos, fundos, sketches e estudos de animação. Não há sprites finais recortados, animações integradas ou build.
+GDD consolidado em Markdown, projeto Unity com protótipo e acervo visual organizado em Art e LevelDesign. O inventário técnico registra dimensões, origem e SHA-256 das imagens. Há concepts, model sheets, retratos, fundos, sketches e estudos de animação; parte do material ainda não está preparada como sprite final. O teste automatizado disponível cobre apenas carregamento de mapas, colisores de limite e presença do personagem.
 
 ### Versionamento e envio
 
@@ -176,11 +184,11 @@ O mesmo repositório local contém a concepção v0.1, o guia de planejamento v0
 
 ### Pendências da equipe
 
-Validar responsabilidades; confirmar autoria e créditos do livro e das imagens, ferramenta de produção e condições de uso; revisar as pranchas; preparar sprites e tiles; implementar o protótipo; criar o repositório remoto. Não atribuir a um integrante a produção de uma imagem sem confirmação.
+Validar responsabilidades; confirmar autoria, créditos e condições de uso do livro e das imagens; preparar sprites e tiles finais; testar manualmente o percurso completo, combate, vitória/derrota, transições e salvamento; validar Windows e Android; realizar playtest externo e registrar problemas; produzir e verificar o build final. Não atribuir a um integrante a produção de uma imagem sem confirmação.
 
 ### Histórico
 
-v0.1 - concepção inicial. v0.2 - direção visual, prompts e planejamento de fases. Recebimento posterior - organização de 29 imagens, registrada no commit a3f6945. v0.2.1 - consolidação deste GDD com estado real do acervo, referências visuais e decisões de integração. Revisões documentais realizadas em 10/09/2026.
+v0.1 - concepção inicial. v0.2 - direção visual, prompts e planejamento de fases. v0.2.1 - organização do acervo e atualização do planejamento. 08/10/2026 - consolidação em um GDD único, registro do protótipo atual e do resultado do teste automatizado. As versões anteriores ficam preservadas no histórico do Git.
 
 ## Direção visual e acervo recebido
 
@@ -206,7 +214,7 @@ Acampamento corresponde à fase 1; Posto DASA, à empresa de segurança da fase 
 
 ### Organização e consulta
 
-Art/README.md contém links de todas as imagens. Art/inventario.json registra origem, resolução, tamanho e hash. Concepts ficam em Art/Concepts; pranchas do protagonista em Art/ModelSheets; fundos em Art/BattleBackgrounds; movimento e efeitos em Art/AnimationStudies; mapas em LevelDesign. Os anexos deste PDF mostram uma seleção do acervo; o índice contém o conjunto completo.
+O README da raiz apresenta a estrutura do acervo. `Art/inventario.json` registra origem, resolução, tamanho e hash. Concepts ficam em `Art/Concepts`; pranchas do protagonista em `Art/ModelSheets`; fundos em `Art/BattleBackgrounds`; movimento e efeitos em `Art/AnimationStudies`; mapas em `LevelDesign`. O índice completo de imagens está no final deste GDD.
 
 ## Sprites, animações e integração
 
@@ -338,4 +346,4 @@ Fase 3: corredor, antecâmara e arena final.
 | [LevelDesign/Fase03-BaseASDA/fase03-sketch.png](../LevelDesign/Fase03-BaseASDA/fase03-sketch.png) | 1448 x 1086 |
 | [Art/AnimationStudies/Effects/agua-sequencia.png](../Art/AnimationStudies/Effects/agua-sequencia.png) | 1536 x 1024 |
 
-[Inventário técnico](../Art/inventario.json) | [Índice visual](../Art/README.md)
+[Inventário técnico](../Art/inventario.json) | [README do projeto](../README.md)

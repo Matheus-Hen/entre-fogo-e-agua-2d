@@ -1,60 +1,33 @@
 # Between fire and water
 
-RPG 2D por turnos previsto para Unity e C#, com investigação de mapas e evolução por XP, baseado no manuscrito **Entre fogo e água** fornecido pela equipe.
+Projeto de RPG 2D para um jogador, desenvolvido em Unity e C#. Acompanhe Magnus enquanto ele investiga a ASDA, controla fogo e água e enfrenta os inimigos em combates por turnos.
 
-## GDD atual | v0.2.1
+## Documentos
 
-- [GDD consolidado em PDF](output/pdf/Between-fire-and-water-GDD-v0.2.1.pdf)
-- [GDD editável com índice das 29 imagens](docs/GDD-v0.2.1.md)
+- [GDD consolidado](docs/GDD.md): conceito, narrativa, mecânicas, fases, direção visual, estado atual e pendências.
+- [Como abrir o protótipo](docs/COMO-ABRIR-PROTOTIPO.md): instruções de execução na Unity.
+- [Referências e créditos pendentes](docs/REFERENCIAS.md).
 
-Esta revisão registra o acervo recebido, inclui referências visuais e diferencia estudos de animação de assets preparados para Unity. A fase 1 usa o sketch como rota física e o diagrama anotado como sequência de objetivos. Para regenerar, executar `python tools/gerar_gdd_atual.py` com ReportLab e Pillow instalados. Os geradores anteriores preservam as revisões históricas v0.1 e v0.2.
+Este é o único README do projeto. O GDD consolidado é o único GDD ativo; versões antigas permanecem no histórico do Git.
 
-## Entrega 1 - Concepção | v0.1
+## Abrir o jogo
 
-Etapa prevista para **03/09/2026**, preparada em **10/09/2026**. Esta versão contém planejamento; ainda não há protótipo, build ou projeto Unity.
+Abra `Between fire and water/` no Unity Hub, carregue `Assets/Scenes/SampleScene.unity` e pressione Play. Os controles e o percurso estão descritos no guia de execução.
 
-- [GDD inicial editável](docs/GDD-v0.1.md)
-- [GDD inicial para entrega em PDF](output/pdf/Between-fire-and-water-GDD-v0.1.pdf)
-- [Referência narrativa](docs/REFERENCIAS.md)
+## Estrutura
 
-## Entrega 2 - Planejamento visual | v0.2
+- `Between fire and water/`: projeto Unity, cena, scripts, sprites e configurações.
+- `docs/GDD.md`: documento principal do jogo.
+- `Art/`: concepts, retratos, model sheets, fundos de batalha e estudos visuais.
+- `LevelDesign/`: sketches e progressão visual das três fases.
+- `imagens/`: material visual recebido para a entrega de planejamento.
+- `Art/inventario.json` e `imagens/inventario.json`: inventários técnicos de origem e hashes.
+- `output/pdf/`: guias visuais e materiais exportados que não são versões ativas do GDD.
 
-- [Guia visual em PDF: descrições e prompts](output/pdf/Between-fire-and-water-Guia-visual-v0.2.pdf)
-- [Guia visual editável](docs/Guia-visual-v0.2.md)
-- [GDD atualizado v0.2](docs/GDD-v0.2.md)
+## Verificação mais recente
 
-O guia inclui concepts descritos, model sheet planejado, identidade visual, sprites e animações, cenários, rotas das fases e progressão dos desafios. A tag v0.2 preserva o planejamento anterior ao recebimento das imagens. O repositório permanece local, sem remoto.
+Os scripts do jogo compilam sem erros. A suíte Play Mode anterior, de 08/10/2026, confirmou apenas o carregamento dos três fundos de exploração, os limites de colisão e a presença de Magnus. Testes ampliados para combate, derrota, transição e retomada do save estão em `Between fire and water/Assets/Tests/PlayMode/`; ainda precisam ser executados dentro da Unity. O relatório anterior está em `tmp/campaign-playmode-20261008-finalrun.xml`.
 
-## Acervo visual recebido
+## Estado visual
 
-As 29 imagens fornecidas pela equipe estão organizadas em [Art/README.md](Art/README.md), com personagens, model sheets, cenários, fundos de batalha e estudos de animação. Os mapas estão em `LevelDesign`, separados por fase. O [inventário técnico](Art/inventario.json) registra origem, dimensões e SHA-256 de cada cópia. Os originais em Documentos foram preservados.
-
-As sequências de movimento e efeitos ainda precisam de preparação para uso na Unity. Os documentos v0.1/v0.2 e suas tags preservam o planejamento histórico; o índice visual registra o recebimento posterior das artes.
-
-Para regenerar esta revisão, executar `python tools/gerar_guia_visual.py` com ReportLab instalado. A v0.1 permanece preservada.
-
-## Equipe
-
-| Integrante | Responsabilidades propostas, a validar |
-| --- | --- |
-| Larissa Campos Cardoso | Game Design e produção |
-| Izak Pinheiro | Arte 2D, animação, level design e áudio |
-| Matheus Henrique | Programação e QA |
-
-## Proposta de escopo
-
-Campanha linear de 20 a 30 minutos, três mapas, seis encontros e um final. Magnus como personagem controlável; aliados em diálogos e eventos. Público 13+; PC e mobile, com Windows e Android propostos como primeiros alvos. Os valores e o volume de conteúdo serão validados no protótipo.
-
-## Versionamento
-
-Usar este mesmo repositório até a entrega final, incluindo o futuro projeto Unity, assets e respectivos arquivos `.meta`, documentos, mapas e registros de testes. As pastas geradas pela Unity estão no `.gitignore`.
-
-Marcos: v0.1 concepção; v0.2 direção visual; v0.3 protótipo; v0.4 vertical slice; v0.5 beta; v1.0 final. A tag local v0.1 identifica esta concepção. O envio acadêmico também exige disponibilizar o commit e a tag em um repositório remoto acessível ao professor.
-
-## Atualizar a documentação
-
-O texto do GDD está centralizado em `tools/gerar_gdd.py`, que gera Markdown e PDF com o mesmo conteúdo. Requer Python 3 e ReportLab. Execute `python tools/gerar_gdd.py` na raiz e revise o PDF após mudanças.
-
-## Próximos passos
-
-Validar responsabilidades e escopo; informar os créditos do livro; disponibilizar o repositório remoto; criar concepts, model sheets e planejamento visual da v0.2; iniciar o protótipo Unity da v0.3. Não há resultados de testes de gameplay nesta entrega.
+O acervo inclui conceitos e estudos de personagens, cenários, animações e efeitos. Parte ainda precisa ser recortada, alinhada e integrada; as imagens conceituais não equivalem a fases navegáveis ou sprites finais. Consulte o GDD para os detalhes e pendências.

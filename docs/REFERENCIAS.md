@@ -1,3 +1,11 @@
+# Referências e créditos
+
+O documento principal é o [GDD consolidado](GDD.md). As informações sobre o manuscrito abaixo foram herdadas dos registros de planejamento; o arquivo original não está neste checkout e deve ser consultado pela equipe antes dos créditos finais.
+
+Materiais visuais: imagens fornecidas pelo usuário, organizadas por finalidade. Ver o [README do projeto](../README.md) e os inventários em `Art/inventario.json` e `imagens/inventario.json`. Autoria, ferramenta de criação e licença das imagens não foram informadas. Não foram adicionadas referências externas. Paleta, associação das plantas às fases, bloqueios, XP e parâmetros de sprites são propostas de design, não dados do manuscrito.
+
+## Registro histórico da v0.1
+
 # Referência narrativa
 
 - Título de referência: Entre fogo e água.

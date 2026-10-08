@@ -89,7 +89,7 @@ def main():
         relative='../'+r['arquivo']
         lines.append(f"| [{r['arquivo']}]({relative}) | {Path(r['origem']).name} | {r['largura']} x {r['altura']} |")
     lines += ['', '[Inventário técnico com hashes e origem](inventario.json)', '']
-    (ROOT/'Art/README.md').write_text('\n'.join(lines),encoding='utf-8')
+    # O índice do acervo fica centralizado no README da raiz e no GDD.
     print(f'Arquivos verificados: {len(records)}; total: {sum(r["bytes"] for r in records)/1024/1024:.1f} MiB')
     print('Hashes repetidos:',sum(n-1 for n in Counter(r['sha256'] for r in records).values()))
 
