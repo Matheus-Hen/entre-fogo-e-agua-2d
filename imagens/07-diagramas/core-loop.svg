@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1200" height="900" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1200" height="900"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-900)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1200" height="900" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="770" width="1200" height="130" style="stroke: rgb(8%,17%,23%); stroke-linecap: butt; stroke-width: 2; fill: rgb(8%,17%,23%); fill-rule: evenodd;"/>
+			<text x="48" y="856" style="font-family: Helvetica; font-size: 17px;fill: rgb(95%,94%,90%); stroke:none;" transform="translate(0,1712) scale(1,-1)">BETWEEN FIRE AND WATER  /  GDD v0.2</text>
+			<text x="48" y="814" style="font-family: Helvetica-Bold; font-size: 34px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,1628) scale(1,-1)">Core loop | ciclo principal</text>
+			<text x="48" y="738" style="font-family: Helvetica; font-size: 22px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,1476) scale(1,-1)">Ações recorrentes que conectam descoberta, desafio e progressão.</text>
+			<rect x="48" y="770" width="110" height="8" style="stroke: rgb(88%,47%,23%); stroke-linecap: butt; stroke-width: 2; fill: rgb(88%,47%,23%); fill-rule: evenodd;"/>
+			<rect x="158" y="770" width="110" height="8" style="stroke: rgb(14%,61%,73%); stroke-linecap: butt; stroke-width: 2; fill: rgb(14%,61%,73%); fill-rule: evenodd;"/>
+			<rect x="55" y="535" width="310" height="135" rx="14" ry="14" style="stroke: rgb(14%,61%,73%); stroke-linecap: butt; stroke-width: 2; fill: rgb(91%,96%,97%); fill-rule: evenodd;"/>
+			<text x="119.7" y="624.75" style="font-family: Helvetica-Bold; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,1249) scale(1,-1)">01  EXPLORAR</text>
+			<text x="112.75" y="593.75" style="font-family: Helvetica; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,1187) scale(1,-1)">Percorrer o mapa</text>
+			<text x="85.6375" y="562.75" style="font-family: Helvetica; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,1125) scale(1,-1)">e encontrar interações</text>
+			<rect x="445" y="535" width="310" height="135" rx="14" ry="14" style="stroke: rgb(14%,61%,73%); stroke-linecap: butt; stroke-width: 2; fill: rgb(91%,96%,97%); fill-rule: evenodd;"/>
+			<text x="502.75" y="624.75" style="font-family: Helvetica-Bold; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,1249) scale(1,-1)">02  INVESTIGAR</text>
+			<text x="511.0875" y="593.75" style="font-family: Helvetica; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,1187) scale(1,-1)">Examinar pistas</text>
+			<text x="479.1125" y="562.75" style="font-family: Helvetica; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,1125) scale(1,-1)">e identificar o objetivo</text>
+			<rect x="835" y="535" width="310" height="135" rx="14" ry="14" style="stroke: rgb(88%,47%,23%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,94%,89%); fill-rule: evenodd;"/>
+			<text x="896.9375" y="624.75" style="font-family: Helvetica-Bold; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,1249) scale(1,-1)">03  COMBATER</text>
+			<text x="845.5" y="593.75" style="font-family: Helvetica; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,1187) scale(1,-1)">Escolher ações em turnos</text>
+			<text x="879.525" y="562.75" style="font-family: Helvetica; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,1125) scale(1,-1)">e vencer o encontro</text>
+			<rect x="835" y="210" width="310" height="135" rx="14" ry="14" style="stroke: rgb(88%,47%,23%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,94%,89%); fill-rule: evenodd;"/>
+			<text x="887.8875" y="299.75" style="font-family: Helvetica-Bold; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,599) scale(1,-1)">04  RECEBER XP</text>
+			<text x="865.6375" y="268.75" style="font-family: Helvetica; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,537) scale(1,-1)">Ganhar a recompensa</text>
+			<text x="869.1125" y="237.75" style="font-family: Helvetica; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,475) scale(1,-1)">uma vez por encontro</text>
+			<rect x="445" y="210" width="310" height="135" rx="14" ry="14" style="stroke: rgb(88%,47%,23%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,94%,89%); fill-rule: evenodd;"/>
+			<text x="526.644" y="299.1" style="font-family: Helvetica-Bold; font-size: 24px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,598) scale(1,-1)">05  EVOLUIR</text>
+			<text x="467.952" y="269.1" style="font-family: Helvetica; font-size: 24px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,538) scale(1,-1)">Ao atingir o limiar de XP,</text>
+			<text x="464.616" y="239.10000000000002" style="font-family: Helvetica; font-size: 24px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,478) scale(1,-1)">melhorar nível e atributos</text>
+			<rect x="55" y="210" width="310" height="135" rx="14" ry="14" style="stroke: rgb(14%,61%,73%); stroke-linecap: butt; stroke-width: 2; fill: rgb(91%,96%,97%); fill-rule: evenodd;"/>
+			<text x="126.66250000000001" y="299.75" style="font-family: Helvetica-Bold; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,599) scale(1,-1)">06  AVANÇAR</text>
+			<text x="96.0875" y="268.75" style="font-family: Helvetica; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,537) scale(1,-1)">Cumprir os objetivos</text>
+			<text x="78.01249999999999" y="237.75" style="font-family: Helvetica; font-size: 25px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,475) scale(1,-1)">e liberar a próxima área</text>
+			<polyline points="365 602, 445 602" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polygon points="445 602, 433 608, 433 596" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<polyline points="755 602, 835 602" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polygon points="835 602, 823 608, 823 596" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<polyline points="990 535, 990 345" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polygon points="990 345, 996 357, 984 357" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<polyline points="835 277, 755 277" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polygon points="755 277, 767 271, 767 283" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<polyline points="445 277, 365 277" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polygon points="365 277, 377 271, 377 283" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<polyline points="210 345, 210 535" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polygon points="210 535, 204 523, 216 523" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<text x="371.518" y="465" style="font-family: Helvetica-Bold; font-size: 23px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,930) scale(1,-1)">DESCOBRIR  •  DECIDIR  •  FORTALECER</text>
+			<text x="375.62350000000004" y="425" style="font-family: Helvetica; font-size: 23px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,850) scale(1,-1)">Magnus aprende e enfrenta novos desafios.</text>
+			<text x="1030" y="437" style="font-family: Helvetica-Bold; font-size: 22px;fill: rgb(88%,47%,23%); stroke:none;" transform="translate(0,874) scale(1,-1)">Vitória</text>
+			<text x="132.105" y="437" style="font-family: Helvetica-Bold; font-size: 22px;fill: rgb(14%,61%,73%); stroke:none;" transform="translate(0,874) scale(1,-1)">Repetir</text>
+			<rect x="55" y="48" width="1090" height="106" rx="16" ry="16" style="stroke: rgb(95%,94%,90%); stroke-linecap: butt; stroke-width: 2; fill: rgb(95%,94%,90%); fill-rule: evenodd;"/>
+			<text x="80" y="120" style="font-family: Helvetica-Bold; font-size: 19px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,240) scale(1,-1)">CONDIÇÕES DO CICLO</text>
+			<text x="80" y="86" style="font-family: Helvetica; font-size: 23px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,172) scale(1,-1)">Derrota: reiniciar o encontro. Encerramento: vencer Mark e concluir o epílogo.</text>
+		</g>
+	</g>
+</svg>
