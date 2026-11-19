@@ -1,0 +1,11 @@
+{
+    "name": "EntreFogoEAgua.Editor",
+    "rootNamespace": "EntreFogoEAgua.Ferramentas",
+    "references": ["EntreFogoEAgua", "Unity.InputSystem", "UnityEngine.UI"],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "noEngineReferences": false
+}

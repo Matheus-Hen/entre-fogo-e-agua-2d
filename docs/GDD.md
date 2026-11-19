@@ -1,349 +1,180 @@
-# Between fire and water | GDD consolidado
+# Entre Fogo e Água 3D | GDD (documento vivo)
 
-Documento canônico do projeto. Consolida a concepção, direção visual, acervo, planejamento e estado atual do protótipo. Atualizado em 08/10/2026.
+Projeto de Jogos Digitais II, V2: jogo 3D em Unity e C#. Atualizado em 19/11/2026 (versão de organização v0.2, trecho integrado). A versão 2D anterior (RPG por turnos) está preservada no histórico do Git (commit `d073241`, "Finalize projeto v1.0").
 
-## Concepção do jogo
+## 1. Identificação
 
-### Identificação
-
-Nome provisório: Between fire and water. Gênero: RPG 2D por turnos, para um jogador. Tecnologia prevista: Unity e C#. Público-alvo: pessoas a partir de 13 anos interessadas em fantasia, investigação e evolução de personagem. Plataformas-alvo: PC e mobile; Windows e Android são a proposta inicial de sistemas.
-
-### Entrega e versão
-
-Este documento reúne o GDD inicial, o planejamento visual e as revisões posteriores do projeto. O estado do protótipo foi atualizado em 08/10/2026; as versões v0.1, v0.2 e v0.2.1 permanecem como marcos históricos no Git, não como documentos ativos.
-
-### Estado atual do projeto
-
-O projeto Unity está em `Between fire and water/`. A cena `Assets/Scenes/SampleScene.unity` carrega a campanha implementada nos scripts do projeto. O protótipo inclui três fundos de exploração, limites de colisão nas fases, movimento por teclado ou toque, seis encontros, pistas, progressão, telas de menu/pausa/configurações, confirmações para substituir ou apagar saves, salvamento local e transições com fade. Mark alterna golpes comuns com ataques fortes anunciados. Esses fluxos ainda precisam de validação manual completa.
-
-Em 08/10/2026, um teste automatizado de Play Mode passou. Ele verificou somente o carregamento dos três fundos de exploração, os quatro limites de colisão por mapa e a presença do corpo físico de Magnus. A compilação atual dos scripts passou sem erros. Testes ampliados para batalha, derrota, progressão entre fases e retomada do save foram adicionados em `Assets/Tests/PlayMode/`, mas ainda precisam ser executados no Unity. Nenhuma dessas verificações comprova teste em Android ou playtest externo. O relatório anterior está em `tmp/campaign-playmode-20261008-finalrun.xml`.
-
-O projeto contém arte conceitual e estudos recebidos, mas nem todos são sprites finais. Os efeitos sonoros são sintetizados pelo protótipo; não há arquivos de áudio no acervo. A situação das versões Git deve ser consultada com `git tag`; o teste não cria uma tag de entrega.
-
-### High Concept
-
-Um jovem capaz de controlar fogo e água descobre que a agência que prometeu protegê-lo quer eliminá-lo. Em um RPG 2D por turnos baseado em Entre fogo e água, o jogador acompanha Magnus Lubros, investiga pistas sobre a ASDA, domina habilidades elementais e fortalece-se em batalhas até enfrentar a organização e descobrir quem realmente cumpre a profecia.
-
-### Objetivo do jogador
-
-Concluir o modo história: investigar a ameaça, superar os confrontos obrigatórios e chegar ao desfecho da queda da ASDA. A evolução por experiência permite enfrentar desafios progressivamente mais fortes.
-
-### Pilares da experiência
-
-Combate acessível: decisões claras em turnos. Descoberta: examinar o mapa revela pistas e desbloqueia objetivos. Progressão: vencer confrontos concede XP e aumenta o poder de Magnus. Narrativa: a campanha mantém o conflito e a revelação central do livro.
-
-### Status das decisões
-
-Nome, gênero, integrantes, público, plataformas e mecânicas básicas foram informados pelo grupo. O acervo visual foi fornecido pelo usuário e está organizado no repositório. Papéis, escopo, controles, regras e valores de produção continuam como propostas iniciais; recebimento de imagens não equivale à validação técnica ou aprovação final de todos os designs.
-
-## Equipe e produção
-
-### Larissa Campos Cardoso
-
-Proposta de responsabilidade principal: Game Designer + Producer. Organizar conceito, roteiro adaptado, GDD, escopo, cronograma e acompanhamento das entregas. Apoiar testes de compreensão da história e dos objetivos.
-
-### Izak Pinheiro
-
-Proposta de responsabilidade principal: Artista 2D + Animador. Produzir concepts, model sheets, sprites, cenários, interface e animações. Acumular Level Design + Sound Design: planejar os três mapas e selecionar, produzir ou editar os efeitos e a trilha.
-
-### Matheus Henrique
-
-Proposta de responsabilidade principal: Programador + QA. Implementar exploração, combate, XP, interface, salvamento e integração na Unity. Gerar builds, registrar bugs e verificar controles, progressão e estabilidade em PC e mobile.
-
-### Trabalho compartilhado
-
-A equipe tem três integrantes; a divisão acima acumula áreas para cobrir a produção. Todos participam de playtests e revisões. A atribuição nominal ainda depende da validação do grupo e não comprova contribuições já realizadas. Cada integrante deverá registrar suas contribuições reais no histórico do projeto.
-
-### Fluxo de trabalho proposto
-
-Manter um único repositório com documentos, código e materiais produzidos. Usar tarefas pequenas com responsável e critério de conclusão. Atualizar o GDD quando houver mudança de regra ou escopo. Realizar uma revisão da versão antes de cada entrega e marcar a revisão correspondente com uma tag.
-
-### Cronograma da disciplina
-
-03/09 - v0.1: concepção e GDD inicial (entrega pendente). 10/09 - v0.2: direção visual e planejamento de fases. 17/09 - v0.3: protótipo jogável. 24/09 - v0.4: vertical slice com sistemas integrados. 01/10 - v0.5: conteúdo completo, playtesting e correções. 08/10 - v1.0: build final, GDD final e apresentação.
-
-### Prioridades imediatas
-
-Validar os papéis, revisar consistência das artes e preparar os sprites a partir das referências recebidas. Implementar na Unity exploração conectada a combate e verificar cedo os controles em Windows e Android. O guia de prompts v0.2 permanece como histórico de produção.
-
-## História e adaptação
-
-### Referência principal
-
-Entre fogo e água, manuscrito fornecido pelo grupo em entre-fogo-e-agua.pdf, 21 páginas. Autoria e edição não foram informadas no pedido. As referências abaixo usam a numeração das páginas do arquivo PDF. O livro é fonte narrativa; as regras de jogo são propostas de adaptação.
-
-### Mundo e conflito - páginas 1 a 6
-
-O prólogo apresenta uma profecia sobre alguém ligado ao fogo e à água e uma organização criada para impedir sua realização. Na trama contemporânea, Magnus Lubros, de 14 anos, possui ligação com as duas nações. Ele e Lizzie entram em contato com a ASDA, que se apresenta como uma agência de proteção.
-
-### Treinamento e traição - páginas 7 a 16
-
-Magnus treina com Ki e aprende a controlar seus poderes. A confiança nos responsáveis pelo acampamento se desfaz quando a intenção de eliminá-lo é revelada. Ele foge, é capturado e escapa novamente com Lizzie, que também demonstra poderes.
-
-### Aliados e investigação - páginas 16 a 19
-
-Magnus e Lizzie encontram Michael, Olive e Brian. O grupo investiga a ASDA e identifica a ligação da empresa DASA com a organização. Esses acontecimentos fundamentam os objetivos de investigação e a progressão até a base inimiga.
-
-### Desfecho - páginas 20 e 21 | spoilers
-
-No confronto final, Brian se sacrifica e cria a oportunidade para os amigos reagirem e destruírem a ASDA. A revelação é que Brian, e não Magnus, cumpre a profecia em seu aniversário de 18 anos. O epílogo mostra os sobreviventes procurados após a destruição da empresa.
-
-### Recorte para o jogo
-
-Proposta: condensar a campanha em treinamento, investigação e confronto final. O prólogo e as viagens serão apresentados em diálogos curtos. Magnus será o único personagem controlável; Lizzie, Michael, Olive e Brian participarão por diálogos e eventos. Mark será adaptado como chefe final. O combate vencido conduz ao desfecho narrativo inspirado no livro, preservando a revelação sobre Brian.
-
-### Tom e consistência
-
-Adotar aventura e tensão com violência estilizada, sem gore e sem conteúdo sexual. Romance apenas sugerido. A faixa 13+ é uma intenção de público, não uma classificação oficial. Padronizar no roteiro os nomes usados de forma inconsistente no manuscrito e a idade de Brian conforme a revelação final. Usar áudio original ou com licença adequada; músicas citadas no livro não integram o escopo sonoro automaticamente.
-
-## Mecânicas e core loop
-
-### Mecânica principal: batalhas em turnos
-
-Proposta inicial: Magnus enfrenta um inimigo por encontro. O jogador escolhe uma ação por turno: ataque básico, habilidade de fogo, habilidade de água ou defesa. Após a ação e a verificação de vida, o inimigo age se estiver vivo. A sequência se repete até a vitória ou derrota. Menus de ação pausam a decisão, sem limite de tempo.
-
-### Fogo, água e defesa
-
-O ataque básico não consome energia. A habilidade de fogo causa dano maior; a de água causa dano moderado e reduz o próximo dano recebido; defender reduz o próximo dano e recupera energia. Cada efeito defensivo expira após o próximo ataque recebido e não acumula. Valores, custos e multiplicadores serão definidos no protótipo. A interface deve mostrar custos, vida, energia e efeitos ativos.
-
-### Mecânica secundária: investigação de mapa
-
-Explorar mapas 2D com visão superior, conversar com NPCs e examinar objetos destacados. Pistas obrigatórias atualizam o objetivo e liberam a próxima área. Pistas opcionais acrescentam contexto. A aproximação de um inimigo visível inicia o combate; encontros obrigatórios vencidos não reaparecem.
-
-### Experiência e evolução
-
-Derrotar inimigos concede XP uma única vez por encontro. Atingir os limiares de XP aumenta o nível e melhora vida e poder de ataque. Proposta de limite: três níveis na campanha curta. O total de XP dos encontros obrigatórios deve permitir concluir o jogo sem repetir batalhas. Não haverá perda de nível após derrota.
-
-### Core loop
-
-Explorar o mapa > investigar pistas e identificar o objetivo > enfrentar e derrotar inimigos > receber XP > subir de nível e ficar mais forte > desbloquear a próxima etapa da história > explorar a nova área. O ciclo termina ao concluir o confronto final e o epílogo.
-
-### Vitória e derrota
-
-Na batalha, vence quem reduzir primeiro a vida do oponente a zero. A vida é limitada a zero no mínimo e a resolução interrompe as ações seguintes; não há ações simultâneas nesta proposta. Se Magnus chegar a zero, mostrar derrota e permitir reiniciar o encontro no estado anterior, sem duplicar XP. A vitória da campanha exige terminar os objetivos obrigatórios, vencer o chefe e assistir ao desfecho.
-
-### Sistemas de apoio
-
-Prever pausa, volume, retorno ao menu e um salvamento automático local ao concluir cada área. Ao carregar, restaurar nível, XP e objetivos concluídos. A cena narrativa de sacrifício de Brian não será tratada como derrota do jogador.
-
-## Escopo inicial e experiência
-
-### Campanha proposta
-
-Duração estimada: 20 a 30 minutos, a confirmar em playtest. Três mapas pequenos, seis encontros no total e um único final. Uma campanha linear completa com começo, desenvolvimento e conclusão, condensando o livro para o prazo disponível.
-
-### Mapa 1 - Acampamento e templo
-
-Entrada > pátio com B1 treino > templo com P1 traição > retorno ao pátio > trilha com B2 guarda > saída. A trilha é acessível pelo pátio, como no sketch, mas só é liberada após P1. O diagrama anotado representa a ordem dos objetivos; sua ligação direta templo-trilha não define uma passagem física. Total: dois encontros.
-
-### Mapa 2 - Posto DASA
-
-Recepção > corredor com B3 guarda > arquivo com P2 identificação > sala de segurança com B4 guarda e terminal com P3 localização da base > saída. As duas pistas e vitórias são obrigatórias; permitir retorno às salas. DASA é a empresa de fachada ligada à ASDA. Total: dois encontros.
-
-### Mapa 3 - Base ASDA
-
-Entrada > corredor com B5 elite > antecâmara de recuperação > arena com B6 Mark > sequência narrativa final. O sacrifício de Brian e a revelação da profecia integram o desfecho; não são derrota do jogador. Total: dois encontros.
-
-### Conteúdo e recursos previstos
-
-Um personagem controlável; quatro aliados narrativos; Ki como instrutor e oponente de treino; Mark como antagonista. Reutilizar a base visual de guarda em variantes comum e elite. Prever sprites de exploração de Magnus, NPCs estáticos, retratos essenciais, poses de combate e efeitos simples de fogo e água. Animações mínimas: parado, andar, atacar, receber dano e derrota.
-
-### Interface e controles
-
-PC: WASD ou setas para mover, E para interagir, mouse para menus e Esc para pausar. Mobile: direcional virtual, botão de interação e seleção de ações por toque, em orientação horizontal. Prever menu inicial, objetivo atual, HUD de vida/energia/nível, menu de combate, vitória, derrota e créditos. Usar texto e ícones junto às cores de fogo e água.
-
-### Limites de produção
-
-Ficam fora da v1.0 proposta: mundo aberto, multiplayer, combate com equipe controlável, criação de itens, árvore extensa de habilidades, finais alternativos, dublagem e adaptação de todas as cenas do livro. PC e mobile continuam como alvos; validar Android cedo e priorizar a estabilização do PC. Se o prazo apertar, reduzir diálogos e variedade visual antes de remover história, investigação ou turnos.
-
-## Validação e entrega v0.2.1
-
-### Critérios para o protótipo v0.3
-
-Mover Magnus com colisões; interagir com uma pista; iniciar e concluir uma batalha; impedir ações fora do turno; encerrar imediatamente quando a vida chegar a zero; conceder XP uma única vez; voltar ao mapa após vitória e reiniciar após derrota. Verificar também o toque em um aparelho Android disponível.
-
-### Critérios para a versão final
-
-Concluir os três mapas sem bloqueios; identificar o objetivo atual; alcançar o chefe com o XP dos encontros obrigatórios; terminar a história; salvar e retomar a progressão sem duplicar recompensas. Conferir legibilidade, controles, áudio e estabilidade em Windows e Android. Registrar aparelho, sistema, versão do jogo e resultado de cada teste.
-
-### Playtesting previsto
-
-Na beta, realizar sessões com pessoas externas ao desenvolvimento, registrar tempo de conclusão, pontos de dúvida e derrotas. Classificar bugs por impacto, corrigir primeiro travamentos e bloqueios de progressão e repetir os percursos afetados. Ainda não há playtests ou resultados nesta versão de concepção.
-
-### Riscos e resposta
-
-Escopo narrativo: condensar eventos nos três mapas. Sobrecarga de arte e level design: reutilizar tiles e variantes de guardas e redistribuir apoio entre integrantes. Mobile: testar resolução e toque desde o protótipo. Balanceamento: evitar dependência de repetição de encontros. Divergências do manuscrito: manter as decisões de adaptação registradas no GDD.
-
-### Conteúdo desta entrega
-
-GDD consolidado em Markdown, projeto Unity com protótipo e acervo visual organizado em Art e LevelDesign. O inventário técnico registra dimensões, origem e SHA-256 das imagens. Há concepts, model sheets, retratos, fundos, sketches e estudos de animação; parte do material ainda não está preparada como sprite final. O teste automatizado disponível cobre apenas carregamento de mapas, colisores de limite e presença do personagem.
-
-### Versionamento e envio
-
-O mesmo repositório local contém a concepção v0.1, o guia de planejamento v0.2 e as artes recebidas posteriormente. Esta revisão é v0.2.1; a tag v0.2 deve permanecer preservada. Falta criar e disponibilizar o repositório remoto para acesso do professor.
-
-### Pendências da equipe
-
-Validar responsabilidades; confirmar autoria, créditos e condições de uso do livro e das imagens; preparar sprites e tiles finais; testar manualmente o percurso completo, combate, vitória/derrota, transições e salvamento; validar Windows e Android; realizar playtest externo e registrar problemas; produzir e verificar o build final. Não atribuir a um integrante a produção de uma imagem sem confirmação.
-
-### Histórico
-
-v0.1 - concepção inicial. v0.2 - direção visual, prompts e planejamento de fases. v0.2.1 - organização do acervo e atualização do planejamento. 08/10/2026 - consolidação em um GDD único, registro do protótipo atual e do resultado do teste automatizado. As versões anteriores ficam preservadas no histórico do Git.
-
-## Direção visual e acervo recebido
-
-### Identidade e referências
-
-Fantasia urbana juvenil ilustrada em 2D, com influência visual de animação japonesa perceptível nas artes recebidas, contornos definidos e sombreamento simplificado nos personagens. O livro permanece como referência narrativa. Cenários recebidos são mais detalhados e usam perspectiva oblíqua; tratá-los como referência de atmosfera e composição, adaptando a câmera para a exploração planejada.
-
-### Paleta funcional
-
-Azul-petróleo #152C3D: contornos, sombras e estrutura da interface. Ciano #32BBD3: água e proteção. Laranja #F47B35: fogo e ataque. Marfim #F3E9D2: fundos e áreas claras. Verde #637C57: vegetação. Cinza #748391: instalações da ASDA. Não usar apenas cor para comunicar: fogo tem forma de chama; água tem gota e arco fluido; interação tem ícone e contorno.
-
-### Design de Magnus
-
-A referência recebida apresenta cabelo escuro curto e bagunçado, olhos castanhos, jaqueta azul-petróleo com faixas laranja e ciano junto à abertura, camiseta clara, calça cinza e tênis claros. Manter esse conjunto nas vistas, expressões e animações. O model sheet e os detalhes estão em Art/ModelSheets/Magnus; o concept está em Art/Concepts/Characters/Magnus.
-
-### Material disponível
-
-O inventário registra 29 PNGs: 8 concepts/retratos de personagens, incluindo a prancha de guardas; 3 model sheets de Magnus; 3 concepts de ambientes; 3 fundos de batalha; 1 prancha de objetos; 1 prancha conjunta de cenários/objetos; 4 estudos de caminhada; 2 estudos de efeitos e 4 mapas/sketches. Os originais foram preservados e as cópias verificadas por SHA-256.
-
-### Nomenclatura dos ambientes
-
-Acampamento corresponde à fase 1; Posto DASA, à empresa de segurança da fase 2; Base ASDA, à instalação final da fase 3. Os originais asda e posto-asda-lateral.png foram classificados como Posto DASA pelo conteúdo. O inventário preserva os nomes de origem para rastreabilidade.
-
-### Organização e consulta
-
-O README da raiz apresenta a estrutura do acervo. `Art/inventario.json` registra origem, resolução, tamanho e hash. Concepts ficam em `Art/Concepts`; pranchas do protagonista em `Art/ModelSheets`; fundos em `Art/BattleBackgrounds`; movimento e efeitos em `Art/AnimationStudies`; mapas em `LevelDesign`. O índice completo de imagens está no final deste GDD.
-
-## Sprites, animações e integração
-
-### Especificações previstas
-
-Tiles de 32 x 32 px; sprite de exploração de Magnus em células de 64 x 64 px, quatro direções. Sprites de combate em células de 256 x 256 px, vista lateral. PNG com transparência real, escala constante, pivô dos personagens no centro dos pés. Esses tamanhos são alvos de exportação após edição, não garantia de precisão da ferramenta generativa.
-
-### Magnus: exploração
-
-Recebidas quatro pranchas de caminhada, uma por direção, cada uma com quatro poses. São estudos com fundo visível, ainda sem recorte em células e sem animação validada. Meta: 16 quadros de caminhada e 4 poses paradas, cerca de 8 quadros por segundo. Revisar poses repetidas, troca de apoio dos pés, escala e continuidade antes de exportar.
-
-### Magnus: combate
-
-Parado: 2 quadros em repetição; ataque básico: 4; conjurar elemento: 4, reutilizados para fogo e água com efeitos separados; defender: 2; receber dano: 2; derrota: 4; vitória: 2. Ações entre 8 e 12 quadros por segundo como ponto inicial. Defesa pode manter o último quadro até receber o golpe.
-
-### NPCs e inimigos
-
-Lizzie, Ki, Michael, Olive e Brian: um sprite estático de exploração e um retrato cada. Guarda comum, elite, Ki de treino e Mark: por conjunto de combate, 2 quadros parado, 4 atacando, 2 recebendo dano e 4 de derrota, total 12. Guarda comum e elite reutilizam animação-base. A derrota do treino de Ki é uma pose de encerramento, não morte.
-
-### Efeitos, objetos e interface
-
-Recebidas duas pranchas com seis estágios visuais cada: fogo e água. Recortar e alinhar, preservar arcos de movimento e remover fundo antes de testar. Impacto básico, defesa, sprites estáticos de NPCs, animações de combate, tiles e ícones de interface continuam pendentes. A prancha de objetos apresenta pergaminho, terminal, identificação e painel; não há objetos individuais preparados.
-
-### Preparação para Unity
-
-Produzir cópias derivadas sem modificar as referências. Separar quadros, uniformizar escala, conferir transparência real, definir pivô nos pés e verificar o ciclo. Depois, importar os arquivos finais no projeto Unity e versionar os .meta. Os tamanhos 64 x 64 e 256 x 256 são metas propostas de exportação, não as dimensões das imagens recebidas.
-
-### Critérios de aprovação técnica
-
-Verificar legibilidade na escala de jogo, orientação da câmera, consistência de roupa e silhueta, área livre para menus nos fundos e ausência de deslocamentos bruscos nos ciclos. As imagens ainda não foram validadas em gameplay; apenas leitura, organização e integridade dos arquivos foram verificadas.
-
-## Fases e progressão dos desafios
-
-### Fase 1: aprender | 32 x 24 tiles propostos
-
-Dois encontros, B1 treino e B2 guarda; P1 revela a traição. Tempo estimado de 6 a 8 minutos. Ensinar movimento, interação, ataque e defesa; planejar evolução do nível 1 para o 2 ao concluir a área. Usar o sketch como topologia física: entrada ao sul, pátio central, templo ao norte, lago a oeste e trilha a leste. Após P1, retornar ao pátio e liberar a trilha.
-
-### Fase 2: investigar | 36 x 24 tiles propostos
-
-Dois guardas, B3 e B4; P2 identifica a organização e P3 localiza sua base. Tempo estimado de 7 a 10 minutos. Apresentar objetivos e exigir alternância entre dano e proteção. A saída depende das pistas e vitórias, sem impedir retorno ao arquivo ou terminal. Planejar nível 3 ao final, sem repetição de encontros para ganhar XP.
-
-### Fase 3: combinar | 32 x 28 tiles propostos
-
-B5 elite exige uso de defesa; B6 Mark alterna ataque simples e preparação visível de ataque forte, permitindo reação no turno seguinte. Recuperar recursos na antecâmara. Tempo estimado de 7 a 12 minutos; concluir com a cena de Brian e a queda da ASDA. Regras e duração dependem de playtest.
-
-### Leitura dos mapas
-
-Círculos representam encontros; losangos representam pistas nos sketches. Os diagramas não estabelecem colisões, medidas exatas ou câmera final. O diagrama de progressão da fase 1 define sequência de objetivos; para navegação, vale a ligação pátio-trilha descrita acima. Os sketches das fases 2 e 3 ainda precisam de rótulos equivalentes para apresentação.
-
-### Coerência do escopo
-
-Mantidos um personagem controlável, três mapas, seis encontros, três níveis e final único. O total estimado continua próximo de 20 a 30 minutos. Personagens aliados atuam em diálogos e eventos, sem sistema de grupo controlável. Ajustar XP e dificuldade com base nos encontros obrigatórios.
-
-### Próximas validações
-
-Construir uma passagem jogável por fase e testar ordem de objetivos, bloqueios, combate, recompensas únicas e salvamento. Verificar resolução e controles no Android. Não há resultados de playtest ou evidência de integração dos assets nesta revisão.
-
-## Referências de Magnus
-
-![Vistas de construção recebidas; referência de continuidade.](../Art/ModelSheets/Magnus/magnus-vistas-construcao.png)
-
-Vistas de construção recebidas; referência de continuidade.
-
-![Prancha de expressões recebida; conferir diferenciação das emoções.](../Art/ModelSheets/Magnus/magnus-expressoes.png)
-
-Prancha de expressões recebida; conferir diferenciação das emoções.
-
-## Referências de cenário e batalha
-
-![Acampamento: concept com visão oblíqua, referência para exploração.](../Art/Concepts/Environments/Acampamento/acampamento-exploracao.png)
-
-Acampamento: concept com visão oblíqua, referência para exploração.
-
-![Base ASDA: fundo lateral recebido para composição de batalha.](../Art/BattleBackgrounds/BaseASDA/base-asda-batalha.png)
-
-Base ASDA: fundo lateral recebido para composição de batalha.
-
-## Mapas recebidos: fases 1 e 2
-
-![Fase 1: templo ao norte, trilha ligada ao pátio a leste.](../LevelDesign/Fase01-Acampamento/fase01-sketch.png)
-
-Fase 1: templo ao norte, trilha ligada ao pátio a leste.
-
-![Fase 2: recepção, corredor, arquivo e sala de segurança.](../LevelDesign/Fase02-PostoDASA/fase02-sketch.png)
-
-Fase 2: recepção, corredor, arquivo e sala de segurança.
-
-## Mapa e estudo de efeito
-
-![Fase 3: corredor, antecâmara e arena final.](../LevelDesign/Fase03-BaseASDA/fase03-sketch.png)
-
-Fase 3: corredor, antecâmara e arena final.
-
-![Água: seis estágios visuais recebidos, ainda com fundo.](../Art/AnimationStudies/Effects/agua-sequencia.png)
-
-Água: seis estágios visuais recebidos, ainda com fundo.
-
-## Índice completo de imagens
-
-| Arquivo | Dimensões |
+| Item | Definição |
 | --- | --- |
-| [Art/Concepts/Environments/Acampamento/acampamento-exploracao.png](../Art/Concepts/Environments/Acampamento/acampamento-exploracao.png) | 1672 x 941 |
-| [Art/Concepts/Environments/PostoDASA/posto-dasa-exploracao.png](../Art/Concepts/Environments/PostoDASA/posto-dasa-exploracao.png) | 1672 x 941 |
-| [Art/Concepts/Characters/Brian/brian-retrato.png](../Art/Concepts/Characters/Brian/brian-retrato.png) | 1254 x 1254 |
-| [Art/Concepts/Boards/cenarios-e-objetos-prancha.png](../Art/Concepts/Boards/cenarios-e-objetos-prancha.png) | 1672 x 940 |
-| [Art/Concepts/Characters/Guardas/guardas-comum-e-elite.png](../Art/Concepts/Characters/Guardas/guardas-comum-e-elite.png) | 1536 x 1024 |
-| [Art/Concepts/Characters/Ki/ki-concept.png](../Art/Concepts/Characters/Ki/ki-concept.png) | 1024 x 1536 |
-| [Art/Concepts/Characters/Lizzie/lizzie-concept.png](../Art/Concepts/Characters/Lizzie/lizzie-concept.png) | 1024 x 1536 |
-| [Art/Concepts/Characters/Magnus/magnus-concept.png](../Art/Concepts/Characters/Magnus/magnus-concept.png) | 1024 x 1536 |
-| [Art/ModelSheets/Magnus/magnus-detalhes.png](../Art/ModelSheets/Magnus/magnus-detalhes.png) | 1536 x 1024 |
-| [Art/ModelSheets/Magnus/magnus-expressoes.png](../Art/ModelSheets/Magnus/magnus-expressoes.png) | 1536 x 1024 |
-| [Art/Concepts/Characters/Mark/mark-concept.png](../Art/Concepts/Characters/Mark/mark-concept.png) | 1024 x 1536 |
-| [Art/Concepts/Characters/Michael/michael-retrato.png](../Art/Concepts/Characters/Michael/michael-retrato.png) | 1254 x 1254 |
-| [Art/ModelSheets/Magnus/magnus-vistas-construcao.png](../Art/ModelSheets/Magnus/magnus-vistas-construcao.png) | 1774 x 887 |
-| [Art/Concepts/Props/objetos-investigaveis-prancha.png](../Art/Concepts/Props/objetos-investigaveis-prancha.png) | 1254 x 1254 |
-| [Art/Concepts/Characters/Olive/olive-retrato.png](../Art/Concepts/Characters/Olive/olive-retrato.png) | 1254 x 1254 |
-| [Art/BattleBackgrounds/Acampamento/acampamento-batalha.png](../Art/BattleBackgrounds/Acampamento/acampamento-batalha.png) | 1672 x 941 |
-| [Art/Concepts/Environments/BaseASDA/base-asda-exploracao.png](../Art/Concepts/Environments/BaseASDA/base-asda-exploracao.png) | 1672 x 941 |
-| [Art/BattleBackgrounds/BaseASDA/base-asda-batalha.png](../Art/BattleBackgrounds/BaseASDA/base-asda-batalha.png) | 1672 x 941 |
-| [LevelDesign/Fase01-Acampamento/fase01-progressao.png](../LevelDesign/Fase01-Acampamento/fase01-progressao.png) | 1329 x 1006 |
-| [Art/AnimationStudies/Effects/fogo-sequencia.png](../Art/AnimationStudies/Effects/fogo-sequencia.png) | 1536 x 1024 |
-| [Art/AnimationStudies/Magnus/magnus-caminhada-costas.png](../Art/AnimationStudies/Magnus/magnus-caminhada-costas.png) | 2172 x 724 |
-| [Art/AnimationStudies/Magnus/magnus-caminhada-frente.png](../Art/AnimationStudies/Magnus/magnus-caminhada-frente.png) | 2172 x 724 |
-| [Art/AnimationStudies/Magnus/magnus-caminhada-esquerda.png](../Art/AnimationStudies/Magnus/magnus-caminhada-esquerda.png) | 2172 x 724 |
-| [Art/AnimationStudies/Magnus/magnus-caminhada-direita.png](../Art/AnimationStudies/Magnus/magnus-caminhada-direita.png) | 2172 x 724 |
-| [Art/BattleBackgrounds/PostoDASA/posto-dasa-batalha.png](../Art/BattleBackgrounds/PostoDASA/posto-dasa-batalha.png) | 1672 x 941 |
-| [LevelDesign/Fase01-Acampamento/fase01-sketch.png](../LevelDesign/Fase01-Acampamento/fase01-sketch.png) | 1448 x 1086 |
-| [LevelDesign/Fase02-PostoDASA/fase02-sketch.png](../LevelDesign/Fase02-PostoDASA/fase02-sketch.png) | 1536 x 1024 |
-| [LevelDesign/Fase03-BaseASDA/fase03-sketch.png](../LevelDesign/Fase03-BaseASDA/fase03-sketch.png) | 1448 x 1086 |
-| [Art/AnimationStudies/Effects/agua-sequencia.png](../Art/AnimationStudies/Effects/agua-sequencia.png) | 1536 x 1024 |
+| Nome | Entre Fogo e Água: Infiltração na Base ASDA |
+| Gênero | Ação e aventura 3D em terceira pessoa, com quebra-cabeça físico |
+| Plataforma-alvo | PC (Windows), teclado e mouse |
+| Motor | Unity 6.6 (6000.6.0f1), C#, Built-in Render Pipeline, Input System |
+| Público | 13+ (fantasia juvenil, violência estilizada sem sangue) |
+| Duração de uma partida | 5 a 10 minutos |
+| Integrantes | Larissa Campos Cardoso, Izak Pinheiro, Matheus Henrique |
 
-[Inventário técnico](../Art/inventario.json) | [README do projeto](../README.md)
+## 2. Conceito
+
+Magnus Lubros, um garoto que controla fogo e água, descobre que a ASDA (agência que dizia protegê-lo) quer eliminá-lo. Ele foge do acampamento, atravessa o rio e invade a base para reunir três provas contra a organização. A fase é curta, com começo, desafio, vitória, derrota e reinício, como pede o escopo da disciplina.
+
+**Referências.** Narrativa: o manuscrito *Entre fogo e água* (ver [REFERENCIAS.md](REFERENCIAS.md)). Jogo: a versão 2D da própria equipe (exploração e combate por turnos com fogo e água) e o projeto-base Plataforma3D das aulas (controle 3D, coleta, física e cenas).
+
+## 3. Objetivo, vitória e derrota
+
+- **Objetivo:** coletar as 3 pistas da ASDA e atravessar o portão da base.
+- **Vitória:** com as 3 pistas, o portão se abre (Animator). Entrar na saída depois do portão mostra a tela **VITÓRIA!** com pontuação, pistas e tempo.
+- **Derrota:** a vida de Magnus chega a 0 por disparos dos guardas, contato com guardas, chamas ou quedas no rio. Aparece a tela **DERROTA** com o motivo.
+- **Nova tentativa:** "Jogar novamente" recarrega a cena e restaura posição, vida, energia, pontuação, pistas, guardas, barreiras, caixas e ponte. O menu de pausa (Esc) também permite reiniciar.
+
+## 4. Controles (também exibidos no jogo)
+
+| Ação | Tecla |
+| --- | --- |
+| Mover (relativo à câmera) | WASD ou setas |
+| Correr | Shift |
+| Pular | Espaço |
+| Girar a câmera | Mouse (ou J / L) |
+| Lançar o elemento ativo | Clique esquerdo ou F |
+| Trocar Fogo ↔ Água | Q, Tab ou roda do mouse (1 = Fogo, 2 = Água) |
+| Pausa | Esc |
+
+## 5. Core loop
+
+Explorar → identificar o obstáculo e seu elemento → escolher o elemento certo ou usar a física → superar (barreira, guarda, ponte) → ganhar pontos ou pista → avançar até o portão.
+
+## 6. Mecânicas
+
+**Mecânica principal: lançamento elemental.** Magnus lança projéteis com Rigidbody e gravidade (trajetória em arco). Cada lançamento gasta 12 de energia (máximo 100, recarga de 14/s), o que obriga a escolher bem quando atirar.
+
+**Regra criada pela equipe: afinidade elemental.** É a adaptação em relação ao projeto-base e à versão 2D.
+
+- Guardas de **fogo** (aura laranja) **absorvem** fogo e recuperam metade do dano; só sofrem dano de **água**. Guardas de **água** (aura ciana) funcionam ao contrário.
+- **Barreira de fogo:** bloqueia a passagem e queima ao toque. Só é apagada com **água** (2 ou 3 acertos); fogo não tem efeito.
+- **Barreira de gelo:** só derrete com **fogo** (3 acertos). **Água reforça o gelo** (+1 acerto necessário, até 6).
+
+Com isso, cada alvo exige uma decisão de elemento, e errar custa energia, tempo e até cura o inimigo.
+
+**Física (Rigidbody).**
+
+- Caixas empurráveis (Rigidbody, 15 kg). Magnus empurra ao encostar.
+- A explosão da bola de fogo também empurra caixas próximas (`AddExplosionForce`).
+- Os projéteis são corpos físicos com gravidade.
+
+**Interações que mudam o estado do jogo.**
+
+- Coletar pistas (trigger).
+- Caixa sobre a placa de pressão, que ergue a ponte.
+- Apagar ou derreter barreiras.
+- Derrotar guardas.
+- Abrir o portão.
+- Checkpoint.
+- Queda no rio: −30 de vida e volta ao último ponto seguro.
+
+**Inimigos.** Os guardas patrulham entre dois pontos. Ao ver Magnus (alcance de 14 m, com linha de visão), viram-se para ele e disparam a cada 2,6 s (10 de dano). O guarda elite tem 120 de vida e deixa cair a pista 3.
+
+## 7. Pontuação
+
+A pontuação é calculada em `GerenciadorPartida.RegistrarPontos`. Cada evento tem um id único guardado em um `HashSet`, então o mesmo evento nunca conta duas vezes.
+
+| Evento | Pontos |
+| --- | --- |
+| Pista coletada | +100 |
+| Guarda derrotado | +50 (elite +100) |
+| Barreira apagada ou derretida | +25 |
+| Placa ativada (ponte) | +25 |
+| Bônus de tempo na vitória | 300 − segundos (mínimo 0) |
+
+## 8. Fase e desafios
+
+**Fluxo de cenas:** `Menu` (botão Jogar) → `Fase01_BaseASDA` → Vitória ou Derrota → Jogar novamente ou Menu.
+
+**Mapa da fase (de sul para norte, ~35 × 105 m):**
+
+1. **Acampamento (desafio 1, física + água).** Ponto inicial, barracas e fogueira. A ponte está submersa: é preciso **empurrar uma caixa até a placa dourada** para erguê-la. No nicho leste, a **Pista 1** está atrás de uma barreira de fogo, que só a água apaga.
+2. **Rio.** Cair custa vida e volta ao checkpoint. As caixas que caem no rio voltam ao lugar original, para o quebra-cabeça nunca ficar impossível.
+3. **Pátio da base (desafio 2, combate com afinidade).** Dois guardas, um de fogo e um de água. No nicho oeste, a **Pista 2** está atrás de gelo, que só o fogo derrete e a água reforça.
+4. **Muro interno.** Segunda barreira de fogo, que exige 3 acertos de água, enquanto os guardas atiram.
+5. **Pátio norte.** Um guarda de fogo e o **guarda elite de água**, que deixa cair a **Pista 3**.
+6. **Portão da base.** Abre com as 3 pistas. A saída depois dele dá a vitória.
+
+## 9. Direção visual e sonora
+
+- **Visual:** low-poly com cores funcionais. Laranja indica fogo e ciano indica água (auras, projéteis, HUD). O dourado marca o que é interativo (placa, pistas). A ASDA usa azul-grafite e o acampamento usa verde e terra. Magnus segue o model sheet (jaqueta azul-marinho com listras laranja e ciano).
+- **Câmera:** terceira pessoa com órbita pelo mouse e anticolisão com paredes (SphereCast).
+- **Áudio:** música original em loop (Lá menor pentatônica, 100 bpm, taiko e flauta sintetizados) e 11 efeitos ligados a eventos: lançar fogo, lançar água, coleta, dano, guarda derrotado, apagar ou derreter, portão, pulo, clique, vitória e derrota.
+
+## 10. Animação
+
+| Clip | Origem | Onde é usado |
+| --- | --- | --- |
+| Magnus_Idle, Magnus_Walk, Magnus_Cast | Blender (rig próprio, FBX) | Animator `Magnus.controller`: parâmetros Velocidade (float) e Lancar (trigger) |
+| Guarda_Patrulha, Guarda_Atingido | Unity (.anim) | Animator `Guarda.controller`: trigger Atingido |
+| Pista_Flutuar | Unity (.anim) | Animator `Pista.controller` |
+| Portao_Fechado, Portao_Abrindo | Unity (.anim) | Animator `Portao.controller`: bool Aberto |
+
+## 11. Requisitos da disciplina → onde conferir
+
+| Requisito | Onde está |
+| --- | --- |
+| Controle do personagem (C#) | `scripts/Jogo3D/MagnusMovimento.cs` (`Update`, `LerEntrada`) |
+| Mecânica principal | `MagnusPoderes.Lancar`, `ProjetilElemental.OnCollisionEnter` |
+| Interação que muda estado | `Pista.OnTriggerEnter`, `PlacaPressao.OnTriggerEnter`, `BarreiraFogo.ReceberElemento`, `PortaoBase.Verificar` |
+| Pontuação sem duplicar | `GerenciadorPartida.RegistrarPontos` / `ColetarPista` |
+| Colisores 3D | Box (chão, muros, caixas, barreiras), Capsule (guardas), Sphere (projéteis, pistas), CharacterController (Magnus) |
+| Rigidbody com efeito | Caixas (`CaixaEmpurravel`, empurrão em `MagnusMovimento.OnControllerColliderHit`), projéteis, explosão de fogo |
+| Prefab com 2+ instâncias | `Prefabs/Guarda` (4), `Caixa` (4), `Pista` (2 + 1 criada em jogo), `BarreiraFogo` (2), projéteis criados em jogo |
+| Animação | `Assets/Animations/*.anim` e `*.controller` |
+| Música e efeito sonoro | `GerenciadorAudio`; `Assets/Audio/` |
+| 2 cenas e transição | `Menu` → `Fase01_BaseASDA` (`MenuPrincipal.BotaoJogar`) |
+| Menu, HUD e indicadores | `MenuPrincipal`, `HudPartida` (pontos, pistas, tempo, vida, energia, elemento, objetivo) |
+| Vitória, derrota e reinício | `GerenciadorPartida.Vencer` / `Perder` / `Reiniciar`; `SaidaFase`; `MagnusStatus.ReceberDano` |
+| Duas situações de desafio | Acampamento (caixa, placa e barreira de fogo) e Base (guardas com afinidade, gelo, 2ª barreira) |
+
+## 12. Responsabilidades (proposta)
+
+| Área | Responsável |
+| --- | --- |
+| Design + produção (GDD, escopo, balanceamento) | Larissa Campos Cardoso |
+| Arte 3D + animação, level + áudio (modelos Blender, clips, mapa, sons) | Izak Pinheiro |
+| Programação + QA (C#, física, UI, cenas, testes) | Matheus Henrique |
+
+Cada integrante deve revisar e conseguir explicar os scripts da sua área (a apresentação final inclui perguntas sobre o código).
+
+## 13. Testes
+
+Testes automatizados de Play Mode em `Assets/Tests/PlayMode/FaseTests.cs` (Window > General > Test Runner > PlayMode). Em 19/11/2026: **12 de 12 aprovados**. Eles cobrem:
+
+- elementos obrigatórios presentes na cena;
+- pontuação sem duplicar;
+- coleta da pista por trigger;
+- afinidade dos guardas;
+- projétil físico ferindo o guarda;
+- barreira de fogo e gelo;
+- caixa na placa erguendo a ponte;
+- queda no rio com retorno ao checkpoint;
+- derrota seguida de reinício que restaura o estado;
+- 3 pistas abrindo o portão e dando vitória, com reinício após a vitória;
+- botão Jogar do menu carregando a fase.
+
+**Pendências de QA:** partida completa jogada manualmente do início ao fim, playtest com outra pessoa e build de teste (recomendada, não obrigatória).
+
+## 14. Decisões e alterações
+
+| Data | Decisão | Efeito no jogo |
+| --- | --- | --- |
+| 08/10/2026 | Fim da versão 2D (RPG por turnos, três mapas). | Base de narrativa, personagens e regras de fogo e água. |
+| 19/11/2026 | Conversão para 3D em uma fase curta (exigência da V2). | Três mapas 2D condensados em uma fase com acampamento, rio e base. Combate por turnos trocado por ação em tempo real. |
+| 19/11/2026 | Regra de afinidade elemental (absorve o próprio elemento, água reforça gelo). | Cada alvo exige escolher o elemento, e errar tem custo. |
+| 19/11/2026 | Energia por lançamento em vez de turnos. | Mantém a gestão de recurso da versão 2D. |
+| 19/11/2026 | XP e níveis removidos; pontuação por eventos únicos. | Atende à pontuação exigida e simplifica o escopo. |
+| 19/11/2026 | Queda no rio custa 30 de vida e volta ao checkpoint; caixas voltam ao lugar. | Evita bloqueio de progressão. |
+| 19/11/2026 | Render pipeline Built-in (já ativo no projeto) e UI com Canvas e Text (legado). | Evita trocar o pipeline perto da entrega. |
+
+## 15. Instruções de execução
+
+Ver [COMO-ABRIR-PROTOTIPO.md](COMO-ABRIR-PROTOTIPO.md). Resumo: abrir `Between fire and water/` no Unity 6000.6.0f1, abrir `Assets/Scenes/Menu.unity` e pressionar Play.
+
+## 16. Créditos e fontes
+
+Ver [REFERENCIAS.md](REFERENCIAS.md).

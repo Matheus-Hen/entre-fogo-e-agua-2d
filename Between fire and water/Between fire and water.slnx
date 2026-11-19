@@ -1,5 +1,7 @@
 ﻿<Solution>
+  <Project Path="EntreFogoEAgua.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="Game2d.PlayModeTests.csproj" />
   <Project Path="Unity.2D.Welcome.csproj" />
+  <Project Path="EntreFogoEAgua.Editor.csproj" />
+  <Project Path="EntreFogoEAgua.Tests.csproj" />
 </Solution>

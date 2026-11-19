@@ -1,33 +1,28 @@
-# Between fire and water
+# Entre Fogo e Água 3D
 
-Projeto de RPG 2D para um jogador, desenvolvido em Unity e C#. Acompanhe Magnus enquanto ele investiga a ASDA, controla fogo e água e enfrenta os inimigos em combates por turnos.
+Jogo 3D de ação e aventura em terceira pessoa, feito em Unity 6 e C# para Projeto de Jogos Digitais II (V2). Magnus controla fogo e água e invade a base da ASDA para reunir três provas. Guardas e barreiras só cedem ao elemento certo.
 
 ## Documentos
 
-- [GDD consolidado](docs/GDD.md): conceito, narrativa, mecânicas, fases, direção visual, estado atual e pendências.
-- [Como abrir o protótipo](docs/COMO-ABRIR-PROTOTIPO.md): instruções de execução na Unity.
-- [Referências e créditos pendentes](docs/REFERENCIAS.md).
-
-Este é o único README do projeto. O GDD consolidado é o único GDD ativo; versões antigas permanecem no histórico do Git.
+- [GDD](docs/GDD.md): conceito, controles, mecânicas, pontuação, fase, decisões datadas e mapa dos requisitos no código.
+- [Como abrir e jogar](docs/COMO-ABRIR-PROTOTIPO.md): execução, percurso de demonstração e testes.
+- [Referências e créditos](docs/REFERENCIAS.md).
 
 ## Abrir o jogo
 
-Abra `Between fire and water/` no Unity Hub, carregue `Assets/Scenes/SampleScene.unity` e pressione Play. Os controles e o percurso estão descritos no guia de execução.
+Abra `Between fire and water/` no Unity Hub (Unity 6000.6.0f1), carregue `Assets/Scenes/Menu.unity` e pressione Play.
 
 ## Estrutura
 
-- `Between fire and water/`: projeto Unity, cena, scripts, sprites e configurações.
-- `docs/GDD.md`: documento principal do jogo.
-- `Art/`: concepts, retratos, model sheets, fundos de batalha e estudos visuais.
-- `LevelDesign/`: sketches e progressão visual das três fases.
-- `imagens/`: material visual recebido para a entrega de planejamento.
-- `Art/inventario.json` e `imagens/inventario.json`: inventários técnicos de origem e hashes.
-- `output/pdf/`: guias visuais e materiais exportados que não são versões ativas do GDD.
+- `Between fire and water/`: projeto Unity.
+  - `Assets/Scenes/`: `Menu`, `Fase01_BaseASDA`. Os protótipos antigos `Cena01_Prologo` e `Acampamento` não entram no build.
+  - `Assets/scripts/Jogo3D/`: scripts do jogo (assembly `EntreFogoEAgua`) e `Editor/ConstrutorJogo3D.cs`, o gerador de cenas e prefabs.
+  - `Assets/Prefabs/`, `Assets/Animations/`, `Assets/Materials/Jogo3D/`, `Assets/Models/`, `Assets/Audio/`.
+  - `Assets/Tests/PlayMode/`: 12 testes de Play Mode.
+- `Art/Modelos3D/`: fontes `.blend` editáveis (Magnus e props). `Art/ModelSheets/`: model sheets da equipe.
+- `tools/blender/` e `tools/audio/`: scripts que geram modelos, animações e áudio.
+- `Art/`, `LevelDesign/`, `imagens/`: acervo visual da versão 2D.
 
-## Verificação mais recente
+## Verificação mais recente (19/11/2026)
 
-Os scripts do jogo compilam sem erros. A suíte Play Mode anterior, de 08/10/2026, confirmou apenas o carregamento dos três fundos de exploração, os limites de colisão e a presença de Magnus. Testes ampliados para combate, derrota, transição e retomada do save estão em `Between fire and water/Assets/Tests/PlayMode/`; ainda precisam ser executados dentro da Unity. O relatório anterior está em `tmp/campaign-playmode-20261008-finalrun.xml`.
-
-## Estado visual
-
-O acervo inclui conceitos e estudos de personagens, cenários, animações e efeitos. Parte ainda precisa ser recortada, alinhada e integrada; as imagens conceituais não equivalem a fases navegáveis ou sprites finais. Consulte o GDD para os detalhes e pendências.
+Os scripts compilam sem erros. Os 12 testes de Play Mode passaram, cobrindo pontuação sem duplicar, afinidade elemental, barreiras, placa e ponte, queda no rio, vitória, derrota com reinício e o botão Jogar do menu. Ainda faltam uma partida manual completa, um playtest externo e uma build (opcional).

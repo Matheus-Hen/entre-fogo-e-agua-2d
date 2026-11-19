@@ -16,3 +16,7 @@
 *.tmp
 __pycache__/
 tmp/
+
+
+# Configuração local do Unity AI Assistant (caminhos da máquina)
+Between fire and water/ProjectSettings/AI.Assistant/
